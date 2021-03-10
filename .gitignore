@@ -1,0 +1,8 @@
+# Ignore notes for active boxes
+active-boxes/
+
+# Ignore file
+*.exe
+*.swp
+*.hiv
+*.ctb
