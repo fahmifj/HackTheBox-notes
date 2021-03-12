@@ -10,7 +10,7 @@ Sorted based on my activity timeline
 | No | Name  		| OS  	  | Difficulty 	| TJnull's OSCP list | Writeup 	|
 |--- |---			|---	  |---			|---			 |---			|
 | 1	 | OpenAdmin 	| Linux	  | Easy		|   	✔️		|	[Read](linux-boxes/01-openadmin/README.md)	|
-| 2	 | Forest 		| Windows | Easy		|   	✔️		|			|
+| 2	 | Forest 		| Windows | Easy		|   	✔️		|	[Read](windows-boxes/02-forest/README.md)	|
 | 3	 | Mango		| Linux	  | Medium		|   	✔️+		|			|
 | 4	 | Remote		| Windows |	Easy		|		✔️		|			|
 | 5	 | Obscurity 	| Linux	  | Medium		|		❌		|			|

@@ -1,0 +1,7 @@
+Administrator
+krbtgt
+sebastien
+lucinda
+andy
+mark
+santi

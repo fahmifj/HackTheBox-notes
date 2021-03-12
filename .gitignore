@@ -1,8 +1,11 @@
 # Ignore notes for active boxes
 active-boxes/
+.vscode/
+temp/
 
 # Ignore file
 *.exe
 *.swp
 *.hiv
 *.ctb
+*.bin
