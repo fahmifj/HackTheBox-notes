@@ -34,7 +34,7 @@ Sorted based on my activity timeline
 | 23 | Passage		| Linux	  | Medium		|		❔		|			|
 | 24 | Bucket		| Linux	  | Medium		|		❔		|			|
 | 25 | Time			| Linux	  | Medium		|		❔		|			|
-| 26 | Reel2		| Windows |	Hard		|		❔		|			|
+| 26 | Reel2		| Windows |	Hard		|		❔		|	[Read](linux-boxes/26-reel2/README.md)	|
 | 27 | Fuse			| Windows | Medium		|		✔️		|			|
 | 28 | Academy		| Linux	  |	Easy		|		❌		|			|
 | 29 | Doctor		| Linux	  |	Easy		|		✔️		|			|

@@ -1,0 +1,20 @@
+Enum:
+# Port 80 
+- 403 no permission on current directory
+
+# Port 443
+- FQDN: Reel2.htb.local
+- Domain: htb.local
+- /owa
+-- needs a credential
+
+# Port 8080
+- a web sns?
+
+
+Access/Exploit:
+- owa
+-- htb\s.svensson:Summer2020
+- mail phishing work
+-- it sending a post request in specific time.
+

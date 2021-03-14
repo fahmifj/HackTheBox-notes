@@ -1,0 +1,32 @@
+# Nmap 7.80 scan initiated Mon Nov  2 15:44:54 2020 as: nmap -sC -sV -oN initial-reel2 -v 10.10.10.210
+Nmap scan report for reel2.htb (10.10.10.210)
+Host is up (0.056s latency).
+Not shown: 991 filtered ports
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp  open  ssl/https?
+|_ssl-date: 2020-11-02T20:47:15+00:00; +1s from scanner time.
+6001/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6002/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6004/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6005/tcp open  msrpc      Microsoft Windows RPC
+6006/tcp open  msrpc      Microsoft Windows RPC
+6007/tcp open  msrpc      Microsoft Windows RPC
+8080/tcp open  http       Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.2.32)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.2.32
+|_http-title: Welcome | Wallstant
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov  2 15:48:14 2020 -- 1 IP address (1 host up) scanned in 199.94 seconds

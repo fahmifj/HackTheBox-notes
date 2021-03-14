@@ -1,0 +1,37 @@
+# Nmap 7.80 scan initiated Sat Mar 13 04:09:24 2021 as: nmap -sC -sV -p80,443,5985,6001,6002,6004,6005,6006,6007,6008,6010,6011,6012,6017,6165,8080 -oN scan/full-reel2 10.10.10.210
+Nmap scan report for reel2.htb (10.10.10.210)
+Host is up (0.41s latency).
+
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp  open  ssl/https?
+|_ssl-date: 2021-03-13T09:12:24+00:00; +1s from scanner time.
+5985/tcp open  http       Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+6001/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6002/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6004/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6005/tcp open  msrpc      Microsoft Windows RPC
+6006/tcp open  msrpc      Microsoft Windows RPC
+6007/tcp open  msrpc      Microsoft Windows RPC
+6008/tcp open  msrpc      Microsoft Windows RPC
+6010/tcp open  ncacn_http Microsoft Windows RPC over HTTP 1.0
+6011/tcp open  msrpc      Microsoft Windows RPC
+6012/tcp open  msrpc      Microsoft Windows RPC
+6017/tcp open  msrpc      Microsoft Windows RPC
+6165/tcp open  msrpc      Microsoft Windows RPC
+8080/tcp open  http       Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.2.32)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.2.32
+|_http-title: Welcome | Wallstant
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 13 04:13:23 2021 -- 1 IP address (1 host up) scanned in 239.51 seconds

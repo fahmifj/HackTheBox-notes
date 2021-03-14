@@ -1,0 +1,5 @@
+/aspnet_client        (Status: 301) [Size: 158] [--> https://10.10.10.210/aspnet_client/]
+/public               (Status: 302) [Size: 147] [--> https://10.10.10.210/owa]
+/Public               (Status: 302) [Size: 147] [--> https://10.10.10.210/owa]
+/exchange             (Status: 302) [Size: 147] [--> https://10.10.10.210/owa]
+/rpc                  (Status: 401) [Size: 13]

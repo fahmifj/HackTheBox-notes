@@ -1,0 +1,62 @@
+@{
+
+# ID used to uniquely identify this document
+GUID = '08c0fdac-36ef-43b5-931f-68171c4c8200'
+
+# Author of this document
+Author = 'cube0x0'
+
+# Description of the functionality provided by these settings
+# Description = ''
+
+# Company associated with this document
+CompanyName = 'Unknown'
+
+# Copyright statement for this document
+Copyright = '(c) 2020 cube0x0. All rights reserved.'
+
+# Modules to import when applied to a session
+# ModulesToImport = 'MyCustomModule', @{ ModuleName = 'MyCustomModule'; ModuleVersion = '1.0.0.0'; GUID = '4d30d5f0-cb16-4898-812d-f20a6c596bdf' }
+
+# Aliases to make visible when applied to a session
+# VisibleAliases = 'Item1', 'Item2'
+
+# Cmdlets to make visible when applied to a session
+# VisibleCmdlets = 'Invoke-Cmdlet1', @{ Name = 'Invoke-Cmdlet2'; Parameters = @{ Name = 'Parameter1'; ValidateSet = 'Item1', 'Item2' }, @{ Name = 'Parameter2'; ValidatePattern = 'L*' } }
+
+# Functions to make visible when applied to a session
+# VisibleFunctions = 'Invoke-Function1', @{ Name = 'Invoke-Function2'; Parameters = @{ Name = 'Parameter1'; ValidateSet = 'Item1', 'Item2' }, @{ Name = 'Parameter2'; ValidatePattern = 'L*' } }
+
+# External commands (scripts and applications) to make visible when applied to a session
+# VisibleExternalCommands = 'Item1', 'Item2'
+
+# Providers to make visible when applied to a session
+# VisibleProviders = 'Item1', 'Item2'
+
+# Scripts to run when applied to a session
+# ScriptsToProcess = 'C:\ConfigData\InitScript1.ps1', 'C:\ConfigData\InitScript2.ps1'
+
+# Aliases to be defined when applied to a session
+# AliasDefinitions = @{ Name = 'Alias1'; Value = 'Invoke-Alias1'}, @{ Name = 'Alias2'; Value = 'Invoke-Alias2'}
+
+# Functions to define when applied to a session
+FunctionDefinitions = @{
+    'Name' = 'Check-File'
+    'ScriptBlock' = {param($Path,$ComputerName=$env:COMPUTERNAME) [bool]$Check=$Path -like "D:\*" -or $Path -like "C:\ProgramData\*" ; if($check) {get-content $Path}} }
+
+# Variables to define when applied to a session
+# VariableDefinitions = @{ Name = 'Variable1'; Value = { 'Dynamic' + 'InitialValue' } }, @{ Name = 'Variable2'; Value = 'StaticInitialValue' }
+
+# Environment variables to define when applied to a session
+# EnvironmentVariables = @{ Variable1 = 'Value1'; Variable2 = 'Value2' }
+
+# Type files (.ps1xml) to load when applied to a session
+# TypesToProcess = 'C:\ConfigData\MyTypes.ps1xml', 'C:\ConfigData\OtherTypes.ps1xml'
+
+# Format files (.ps1xml) to load when applied to a session
+# FormatsToProcess = 'C:\ConfigData\MyFormats.ps1xml', 'C:\ConfigData\OtherFormats.ps1xml'
+
+# Assemblies to load when applied to a session
+# AssembliesToLoad = 'System.Web', 'System.OtherAssembly, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+
+}
