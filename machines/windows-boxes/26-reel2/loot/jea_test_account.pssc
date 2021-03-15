@@ -30,6 +30,6 @@ RoleDefinitions = @{
         'RoleCapabilities' = 'jea_test_account' } }
 
 # Language mode to apply when applied to a session. Can be 'NoLanguage' (recommended), 'RestrictedLanguage', 'ConstrainedLanguage', or 'FullLanguage'
-LanguageMode = 'FullLanguage'
+LanguageMode = 'NoLanguage'
 
 }

