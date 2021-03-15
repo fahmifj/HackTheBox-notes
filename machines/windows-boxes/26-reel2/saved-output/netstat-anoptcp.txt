@@ -1,0 +1,59 @@
+PS C:\Users\k.svensson\Documents> netstat -anop tcp
+netstat -anop tcp
+                                                                                   
+Active Connections                                                                 
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:25             0.0.0.0:0              LISTENING       5096
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:88             0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       652
+  TCP    0.0.0.0:389            0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:464            0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:587            0.0.0.0:0              LISTENING       5096
+  TCP    0.0.0.0:593            0.0.0.0:0              LISTENING       652
+  TCP    0.0.0.0:636            0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:808            0.0.0.0:0              LISTENING       2348
+  TCP    0.0.0.0:3268           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:3269           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING       2320
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:6001           0.0.0.0:0              LISTENING       4328
+  TCP    0.0.0.0:6002           0.0.0.0:0              LISTENING       3656
+  TCP    0.0.0.0:6004           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:6005           0.0.0.0:0              LISTENING       368
+  TCP    0.0.0.0:6006           0.0.0.0:0              LISTENING       744
+  TCP    0.0.0.0:6007           0.0.0.0:0              LISTENING       772
+  TCP    0.0.0.0:6008           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:6010           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:6011           0.0.0.0:0              LISTENING       476
+  TCP    0.0.0.0:6012           0.0.0.0:0              LISTENING       1088
+  TCP    0.0.0.0:6017           0.0.0.0:0              LISTENING       2240
+  TCP    0.0.0.0:6024           0.0.0.0:0              LISTENING       1296
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       1160
+  TCP    0.0.0.0:9389           0.0.0.0:0              LISTENING       1124
+  TCP    0.0.0.0:20735          0.0.0.0:0              LISTENING       1464
+  TCP    0.0.0.0:20744          0.0.0.0:0              LISTENING       1552
+  TCP    0.0.0.0:20745          0.0.0.0:0              LISTENING       1552
+  TCP    0.0.0.0:20760          0.0.0.0:0              LISTENING       3656
+  TCP    0.0.0.0:20768          0.0.0.0:0              LISTENING       3780
+  TCP    0.0.0.0:20770          0.0.0.0:0              LISTENING       4024
+  TCP    0.0.0.0:20788          0.0.0.0:0              LISTENING       2992
+  TCP    0.0.0.0:20807          0.0.0.0:0              LISTENING       4272
+  TCP    0.0.0.0:20823          0.0.0.0:0              LISTENING       4540
+  TCP    0.0.0.0:20831          0.0.0.0:0              LISTENING       4328
+  TCP    0.0.0.0:20837          0.0.0.0:0              LISTENING       4656
+  TCP    0.0.0.0:20843          0.0.0.0:0              LISTENING       4440
+  TCP    0.0.0.0:20851          0.0.0.0:0              LISTENING       4960
+  TCP    0.0.0.0:20860          0.0.0.0:0              LISTENING       5096
+  TCP    0.0.0.0:20863          0.0.0.0:0              LISTENING       468
+  TCP    0.0.0.0:20878          0.0.0.0:0              LISTENING       1208
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+  TCP    0.0.0.0:64327          0.0.0.0:0              LISTENING       4272
+  TCP    10.10.10.210:53        0.0.0.0:0              LISTENING       1296
+  TCP    10.10.10.210:139       0.0.0.0:0              LISTENING       4
+  TCP    10.10.10.210:5985      10.10.14.35:50302      ESTABLISHED     4
+  TCP    10.10.10.210:36598     10.10.14.35:9000       ESTABLISHED     9732
+  TCP    127.0.0.1:53           0.0.0.0:0              LISTENING       1296

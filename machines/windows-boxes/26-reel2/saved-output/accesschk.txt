@@ -1,0 +1,204 @@
+PS C:\Users\k.svensson\Documents>.\ac.exe -vqp *
+
+Accesschk v6.13 - Reports effective permissions for securable objects
+Copyright � 2006-2020 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+Error opening [4] System:
+Access is denied.
+Error opening [200] smss.exe:
+Access is denied.
+Error opening [300] csrss.exe:
+Access is denied.
+Error opening [368] wininit.exe:
+Access is denied.
+Error opening [376] csrss.exe:
+Access is denied.
+Error opening [412] winlogon.exe:
+Access is denied.
+Error opening [468] services.exe:
+Access is denied.
+Error opening [476] lsass.exe:
+Access is denied.
+Error opening [608] svchost.exe:
+Access is denied.
+Error opening [652] svchost.exe:
+Access is denied.
+Error opening [744] svchost.exe:
+Access is denied.
+Error opening [772] svchost.exe:
+Access is denied.
+Error opening [804] dwm.exe:
+Access is denied.
+Error opening [824] svchost.exe:
+Access is denied.
+Error opening [916] svchost.exe:
+Access is denied.
+Error opening [68] svchost.exe:
+Access is denied.
+Error opening [1088] spoolsv.exe:
+Access is denied.
+Error opening [1124] Microsoft.ActiveDirectory.WebServices.exe:
+Access is denied.
+Error opening [1160] httpd.exe:
+Access is denied.
+Error opening [1188] svchost.exe:
+Access is denied.
+Error opening [1208] dfsrs.exe:
+Access is denied.
+Error opening [1272] svchost.exe:
+Access is denied.
+Error opening [1296] dns.exe:
+Access is denied.
+Error opening [1320] inetinfo.exe:
+Access is denied.
+Error opening [1412] ismserv.exe:
+Access is denied.
+Error opening [1464] MSExchangeADTopologyService.exe:
+Access is denied.
+Error opening [1496] httpd.exe:
+Access is denied.
+Error opening [1528] exfba.exe:
+Access is denied.
+Error opening [1552] store.exe:
+Access is denied.
+Error opening [2240] mad.exe:
+Access is denied.
+Error opening [2276] msftesql.exe:
+Access is denied.
+Error opening [2320] mysqld.exe:
+Access is denied.
+Error opening [2348] SMSvcHost.exe:
+Access is denied.
+Error opening [2472] VGAuthService.exe:
+Access is denied.
+Error opening [2524] vmtoolsd.exe:
+Access is denied.
+Error opening [2600] svchost.exe:
+Access is denied.
+Error opening [2648] svchost.exe:
+Access is denied.
+Error opening [2676] dfssvc.exe:
+Access is denied.
+Error opening [3016] WmiPrvSE.exe:
+Access is denied.
+Error opening [3296] w3wp.exe:
+Access is denied.
+Error opening [3656] Microsoft.Exchange.AddressBook.Service.exe:
+Access is denied.
+Error opening [3720] Microsoft.Exchange.AntispamUpdateSvc.exe:
+Access is denied.
+Error opening [3780] Microsoft.Exchange.EdgeSyncSvc.exe:
+Access is denied.
+Error opening [3932] MsExchangeFDS.exe:
+Access is denied.
+Error opening [4024] MSExchangeMailboxAssistants.exe:
+Access is denied.
+Error opening [4092] MSExchangeMailboxReplication.exe:
+Access is denied.
+Error opening [2992] MSExchangeMailSubmission.exe:
+Access is denied.
+Error opening [4072] Microsoft.Exchange.ProtectedServiceHost.exe:
+Access is denied.
+Error opening [4272] msexchangerepl.exe:
+Access is denied.
+Error opening [4328] Microsoft.Exchange.RpcClientAccess.Service.exe:
+Access is denied.
+Error opening [4440] Microsoft.Exchange.Search.ExSearch.exe:
+Access is denied.
+Error opening [4540] Microsoft.Exchange.ServiceHost.exe:
+Access is denied.
+Error opening [4656] MSExchangeThrottling.exe:
+Access is denied.
+Error opening [4788] MSExchangeTransport.exe:
+Access is denied.
+Error opening [4960] MSExchangeTransportLogSearch.exe:
+Access is denied.
+Error opening [5096] EdgeTransport.exe:
+Access is denied.
+Error opening [5108] conhost.exe:
+Access is denied.
+Error opening [5336] vds.exe:
+Access is denied.
+Error opening [5468] svchost.exe:
+Access is denied.
+Error opening [5516] svchost.exe:
+Access is denied.
+Error opening [5536] dllhost.exe:
+Access is denied.
+Error opening [5704] msdtc.exe:
+Access is denied.
+[6104] taskhostex.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[5196] explorer.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+Error opening [4744] svchost.exe:
+Access is denied.
+[5876] vm3dservice.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[3912] vmtoolsd.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[3260] stickynotes.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[1044] stickynotes.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[6040] stickynotes.exe
+  Medium Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[8832] wsmprovhost.exe
+  Medium Plus Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+     NT AUTHORITY\SYSTEM
+        SYNCHRONIZE
+[9732] r.exe
+  Medium Plus Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[9528] conhost.exe
+  Medium Plus Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[9600] powershell.exe
+  Medium Plus Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
+[9136] ac.exe
+  Medium Plus Mandatory Level [No-Write-Up, No-Read-Up]
+  RW HTB\k.svensson
+        PROCESS_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+        PROCESS_ALL_ACCESS
