@@ -2,11 +2,11 @@
 
 ![4511894bc546dcd0e199621c1f8dea85.png](_resources/9fe21bbdf4c4400d8fe989eb3c9d66fd.png)
 
-Reel2 starts with collecting names from users in a Social Networking Service. I'll create a new form of usernames and spray a seasonal passwords to them in an Outlook Web App page. It continues by cracking an NTLM hash obtained from phished account. Next, I'll have to bypass the command restriction in PowerShell. For the root part, I'll abuse the PowerShell custom function to read the root flag.
+Reel2 starts with collecting users' full name from a Social Networking Service, its purpose is to generate a new form of usernames and use them to spray a seasonal passwords toward Outlook Web App page. Inside the Outlook, a phishing attack is performed to steal users NTLM hash. Next, I'll have to bypass the command restriction in PowerShell. For the root part, I'll abuse the PowerShell custom function to read the root flag.
 
 Let's go fishing!
 # Reconnaissance
-First thing first, I'll start with port scans,  full port scan.
+First thing first, I'll start with a full port scanning.
 
 ## Nmap
 With `nmap` scan, there are 16 ports open, but I'll ignore the ports started with 60xx.
@@ -53,7 +53,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ## TCP 80 - Web
 
-Visiting `10.10.10.210` via web browser only display a 403 server error.
+Visiting `10.10.10.210` via web browser only displays a 403 server error.
 
 ![ce805043d01d24e4edff9e6a44253d67.png](_resources/3e3280e74b8d4a9689f1b8be36dc8f08.png)
 
@@ -92,7 +92,7 @@ In the https version, a self signed certificate reveals the machine's FQDN, `Ree
 
 ![2e9dc358bb73def4fe5248c1da99daf8.png](_resources/07cdcb1c20274bd3b10348b289ae2e6c.png)
 
-It ends up with showing IIS default page.
+The page itself ends up by just showing the IIS default page.
 
 ![abe4527eecd0fbeeabfbf0003216eb91.png](_resources/95df366b7ffc48a89622c996a02b6d33.png)
 
