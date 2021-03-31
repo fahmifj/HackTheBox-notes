@@ -2,6 +2,7 @@
 active-boxes/
 .vscode/
 temp/
+dumps/
 
 # Ignore file
 *.exe

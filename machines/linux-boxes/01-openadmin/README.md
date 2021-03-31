@@ -45,7 +45,7 @@ It only display the default Apache page.
 ![1ad0727e5956f0800cbe4ec0c02df451.png](_resources/4fb96d89a99c4244bb54291abd974267.png)
 
 By using `dirb` I discovered few hidden path.
-```text
+```bash
 dirb http://openadmin.htb/ /usr/share/wordlists/dirb/common.txt -r
 ... <omitted> 
 ---- Scanning URL: http://openadmin.htb/ ----
@@ -149,7 +149,7 @@ But no `user.txt` in jimmy's home dir.
 
 For the second time, I use the find command to search all files accessible/owned by jimmy.
 
-```
+```bash
 find / -type f -user jimmy 2>/dev/null
 ```
 
@@ -194,7 +194,7 @@ This line code has an improper redirection.
 	if (!isset ($_SESSION['username'])) { 
 		header("Location: /index.php"); 
 	};
-``` 
+```
 
 It checks for a user session but after the header location is set to `/index.php`, it doesn't have a `die()` or `exit()` function called. This will resulting the rest of the code get executed/rendered.
 ```
