@@ -1,0 +1,31 @@
+POST /upload.jsp?email=asda HTTP/1.1
+Host: 10.10.10.205:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.10.205:8080/service/
+Content-Type: multipart/form-data; boundary=---------------------------11958031921392458626595673778
+Origin: http://10.10.10.205:8080
+Content-Length: 262
+Connection: close
+Cookie: JSESSIONID=6F67ED46B3ED16FF4F198B464EC88053
+
+-----------------------------11958031921392458626595673778
+Content-Disposition: form-data; name="image"; filename="upload.jsp"
+Content-Type: application/octet-stream
+
+
+
+
+
+
+
+
+
+
+
+
+Invalid request
+
+-----------------------------11958031921392458626595673778--

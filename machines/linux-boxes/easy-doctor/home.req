@@ -1,0 +1,10 @@
+GET /home?page=1 HTTP/1.1
+Host: doctors.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Cookie: session=.eJwlzj0OwjAMQOG7eGZI7MSJe5kq_hOsLZ0Qd6cS69Mbvg_secT5hO19XPGA_eWwQRMSDJdkRrMYOFNNMZvRdM5gth6jkLulV3JtOS1EFOsQGlNMDDXW_VN37GFzmbaGrWhiFq-r91aVlGWsdMV1ByYeZfJShBtynXH8NQjfH00QMJk.YBo8Bw.h165pwEGvKjGaPS-d3RiIO-xe34
+Upgrade-Insecure-Requests: 1
+

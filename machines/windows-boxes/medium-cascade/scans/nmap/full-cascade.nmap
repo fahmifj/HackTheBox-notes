@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Tue Jun  2 21:00:24 2020 as: nmap -Pn -p- -oA nmap/full-cascade cascade.htb
+Nmap scan report for cascade.htb (10.10.10.182)
+Host is up (0.12s latency).
+Not shown: 65520 filtered ports
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+49154/tcp open  unknown
+49155/tcp open  unknown
+49157/tcp open  unknown
+49158/tcp open  unknown
+49165/tcp open  unknown
+
+# Nmap done at Tue Jun  2 21:05:28 2020 -- 1 IP address (1 host up) scanned in 304.38 seconds

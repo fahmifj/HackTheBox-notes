@@ -1,0 +1,56 @@
+root@sneakymailer:/etc/systemd/system# cat bot-imap-user.service
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=vmail
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/vmail/venv/bin/python /opt/scripts/vmail/imap-user-login.py
+
+root@sneakymailer:/etc/systemd/system# cat restore-sent-mail-box.service
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=vmail
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/vmail/venv/bin/python /opt/scripts/vmail/restore-sent-mail-box.py
+
+[Install]
+WantedBy=multi-user.target
+
+[Install]
+WantedBy=multi-user.target
+
+root@sneakymailer:/etc/systemd/system# cat clean-ftp.service
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=developer
+ExecStartPre=/bin/sleep 60
+ExecStart=/usr/bin/python3 /opt/scripts/developer/clean-ftp.py
+
+[Install]
+WantedBy=multi-user.target
+
+root@sneakymailer:/etc/systemd/system#
+root@sneakymailer:/etc/systemd/system# cat install-modules.service 
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+User=low
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/low/venv/bin/python /opt/scripts/low/install-modules.py
+
+[Install]
+WantedBy=multi-user.target

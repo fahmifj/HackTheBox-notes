@@ -1,0 +1,10 @@
+[Guest] rid
+[AAD_987d7f2f57d2] rid
+[mhope] rid
+[SABatchJobs] rid
+[svc-ata] rid
+[svc-bexec] rid
+[svc-netapp] rid
+[dgalanos] rid
+[roleary] rid
+[smorgan] rid

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Apr 21 01:54:16 2020 as: nmap -sC -sV -oA nmap/obscurity htb.obscurity
+Host: 10.10.10.168 (htb.obscurity)	Status: Up
+Host: 10.10.10.168 (htb.obscurity)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/closed/tcp//http///, 8080/open/tcp//http-proxy//BadHTTPServer/, 9000/closed/tcp//cslistener///	Ignored State: filtered (996)
+# Nmap done at Tue Apr 21 01:54:49 2020 -- 1 IP address (1 host up) scanned in 32.99 seconds

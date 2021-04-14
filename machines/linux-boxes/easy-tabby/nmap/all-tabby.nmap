@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Sat Jun 27 10:24:27 2020 as: nmap -p- -oN nmap/tabby-fullport 10.10.10.194
+Nmap scan report for megahosting.htb (10.10.10.194)
+Host is up (0.11s latency).
+Not shown: 65532 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8080/tcp open  http-proxy
+
+# Nmap done at Sat Jun 27 10:41:44 2020 -- 1 IP address (1 host up) scanned in 1036.40 seconds

@@ -1,0 +1,14 @@
+# Nmap 7.80 scan initiated Sun Aug 16 11:35:56 2020 as: nmap -sC -sV -oN worker-initial -v 10.10.10.203
+Nmap scan report for dimension.worker.htb (10.10.10.203)
+Host is up (0.16s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+3690/tcp open  svnserve Subversion
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Aug 16 11:36:21 2020 -- 1 IP address (1 host up) scanned in 24.36 seconds

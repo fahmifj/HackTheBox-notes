@@ -1,12 +1,16 @@
 # Ignore notes for active boxes
 active-boxes/
+active-challenges/
 .vscode/
 temp/
 dumps/
+ysoserial*
+logs/
 
 # Ignore file
+alpine*
 *.exe
 *.swp
 *.hiv
-*.ctb
+*.ctb*
 *.bin

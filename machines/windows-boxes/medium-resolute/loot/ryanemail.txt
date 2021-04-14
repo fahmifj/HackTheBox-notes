@@ -1,0 +1,3 @@
+Email to team:
+
+- due to change freeze, any system changes (apart from those to the administrator account) will be automatically reverted within 1 minute

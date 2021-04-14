@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Jun 19 11:57:54 2020 as: nmap -p- -T4 -oA full-fuse 10.10.10.193
+Host: 10.10.10.193 ()	Status: Up
+Host: 10.10.10.193 ()	Ports: 53/open/tcp//domain///, 80/open/tcp//http///, 88/open/tcp//kerberos-sec///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 389/open/tcp//ldap///, 445/open/tcp//microsoft-ds///, 464/open/tcp//kpasswd5///, 593/open/tcp//http-rpc-epmap///, 636/open/tcp//ldapssl///, 3268/open/tcp//globalcatLDAP///, 3269/open/tcp//globalcatLDAPssl///, 5985/open/tcp//wsman///, 9389/open/tcp//adws///, 49666/open/tcp/////, 49667/open/tcp/////, 49669/open/tcp/////, 49670/open/tcp/////, 49672/open/tcp/////, 49690/open/tcp/////, 49754/open/tcp/////	Ignored State: filtered (65514)
+# Nmap done at Fri Jun 19 12:03:35 2020 -- 1 IP address (1 host up) scanned in 340.41 seconds

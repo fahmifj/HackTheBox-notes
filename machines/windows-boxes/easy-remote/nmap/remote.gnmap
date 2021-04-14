@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Apr 20 12:26:31 2020 as: nmap -sC -sV -oA remote htb.remote
+Host: 10.10.10.180 (htb.remote)	Status: Up
+Host: 10.10.10.180 (htb.remote)	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 80/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///	Ignored State: closed (994)
+# Nmap done at Mon Apr 20 12:29:25 2020 -- 1 IP address (1 host up) scanned in 173.99 seconds

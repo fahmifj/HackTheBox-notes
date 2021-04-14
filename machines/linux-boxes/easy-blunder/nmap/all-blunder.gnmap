@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat May 30 17:13:23 2020 as: nmap -p- -oA nmap/blunder-full blunder.htb
+Host: 10.10.10.191 (blunder.htb)	Status: Up
+Host: 10.10.10.191 (blunder.htb)	Ports: 21/closed/tcp//ftp///, 80/open/tcp//http///	Ignored State: filtered (65533)
+# Nmap done at Sat May 30 17:21:43 2020 -- 1 IP address (1 host up) scanned in 501.01 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sat May  9 15:35:05 2020 as: nmap -sC -sV -oA nmap/cache htb.cache
+Host: 10.10.10.188 (htb.cache)	Status: Up
+Host: 10.10.10.188 (htb.cache)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//ssl|http//Apache|2.4.29 (Ubuntu)/	Ignored State: closed (998)
+# Nmap done at Sat May  9 15:37:45 2020 -- 1 IP address (1 host up) scanned in 160.31 seconds

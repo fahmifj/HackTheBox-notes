@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Fri Jun 19 11:57:54 2020 as: nmap -p- -T4 -oA full-fuse 10.10.10.193
+Nmap scan report for 10.10.10.193
+Host is up (0.13s latency).
+Not shown: 65514 filtered ports
+PORT      STATE SERVICE
+53/tcp    open  domain
+80/tcp    open  http
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+5985/tcp  open  wsman
+9389/tcp  open  adws
+49666/tcp open  unknown
+49667/tcp open  unknown
+49669/tcp open  unknown
+49670/tcp open  unknown
+49672/tcp open  unknown
+49690/tcp open  unknown
+49754/tcp open  unknown
+
+# Nmap done at Fri Jun 19 12:03:35 2020 -- 1 IP address (1 host up) scanned in 340.41 seconds

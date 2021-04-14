@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Sat May 30 17:13:23 2020 as: nmap -p- -oA nmap/blunder-full blunder.htb
+Nmap scan report for blunder.htb (10.10.10.191)
+Host is up (0.17s latency).
+Not shown: 65533 filtered ports
+PORT   STATE  SERVICE
+21/tcp closed ftp
+80/tcp open   http
+
+# Nmap done at Sat May 30 17:21:43 2020 -- 1 IP address (1 host up) scanned in 501.01 seconds
