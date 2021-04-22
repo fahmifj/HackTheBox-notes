@@ -2,7 +2,10 @@
 
 This section contains notes and other resources from retired machines I've owned.
 
-I publish some writeups on my personal blog.
+I publish some writeups on my personal blog or Medium
+
+- https://fahmifj.github.io/writeup/
+- https://fahmifj.medium.com/
 
 **Note:**
 
@@ -51,5 +54,6 @@ I publish some writeups on my personal blog.
 |  35  |   Delivery   |    Linux    |    Easy    |     ❔     |
 |  36  |    Tenet     |    Linux    |   Medium   |     ❔     |
 |  37  |    Ready     |    Linux    |   Medium   |     ❔     |
-|  38  |  Laboratory  |    Linux    |    Easy    |     ❔     |
+|  38  |  Laboratory  |    Linux    |    Easy    |     ❌     |
 |  39  |  Armageddon  |    Linux    |    Easy    |     ❔     |
+|  40  |     APT      |   Windows   |   Insane   |     ❌     |

@@ -1,0 +1,4 @@
+# DONE: Secure docker for regular users
+### DONE: Automate docker security on startup
+# TODO: Look into "docker compose"
+# TODO: Permanently ban DeeDee from lab

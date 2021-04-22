@@ -181,7 +181,11 @@ From security stack exchange (https://security.stackexchange.com/questions/93542
 
 #### Identify accessible methods
 
-```
+```bash
+→ root@iamf «rpc-enum» «10.10.14.72»
+$ rpcdump.py -brute-opnums -opnum-max 5 'ncacn_ip:tcp:10.10.10.213'
+
+...<snip>...
 Protocol: [MS-DCOM]: Distributed Component Object Model (DCOM) Remote
 Provider: rpcss.dll
 UUID: 99FCFEC4-5260-101B-BBCB-00AA0021347A v0.0
@@ -215,7 +219,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"ht:",["target="])
     except getopt.GetoptError:
-        print 'IOXIDResolver.py -t <target>'
+        print('IOXIDResolver.py -t <target>')
         sys.exit(2)
 
     target_ip = "192.168.1.1"
@@ -243,22 +247,22 @@ def main(argv):
 
     for binding in bindings:
         NetworkAddr = binding['aNetworkAddr']
-        print "Address: " + NetworkAddr
+        print("Address: " + NetworkAddr)
 
 if __name__ == "__main__":
    main(sys.argv[1:])
 ```
 
-APT has IPv6 on one of its interfaces
+APT has IPv6 on one of its interfaces 
 
-```
+```bash
 → root@iamf «rpc-enum» «10.10.14.72» 
-$ ./IOXIDResolver.py -t 10.10.10.213
+$ ./IOXIDResolver.py -t '10.10.10.213'
 [*] Retrieving network interface of 10.10.10.213
 Address: apt
 Address: 10.10.10.213
 Address: dead:beef::b885:d62a:d679:573f
-Address: dead:beef::11c4:e2a4:c6fe:a535
+Address: dead:beef::89df:c1d4:6aaf:67ce
 ```
 
 ### Nmap -  Ipv6
@@ -565,7 +569,7 @@ SMB         127.0.0.1       445    APT              [+] htb.local\henry.vinson e
 
 
 
-#### Remote Access
+#### Registry enumeration
 
 This user cannot establish a session on WinRM.
 
@@ -631,8 +635,6 @@ HKU\Software\GiganticHostingManagementSystem
 
 ### Shell as henry.vinson_adm
 
-
-
 The creds can be used to login remotely 
 
 ```bash
@@ -649,7 +651,7 @@ Info: Establishing connection to remote endpoint
 745212a817f60f27befd...<snip>...
 ```
 
-#### Enumeration
+#### Internal enumeration
 
 User enum
 
@@ -692,7 +694,7 @@ From https://kb.iu.edu/d/atvn,
 
 With `lmcompatibilitylevel = 2`, it means the authentication process by default is using NTLMv1. NTLMv1 challenges has 8 bytes long. There's a site called https://crack.sh that has rainbow tables for a specific challenge "1122334455667788".
 
-So if an attacker can force a client to make a request using NTLMv1 to a server that attacker control, the attacker may set the challenge to "1122334455667788", and when the server receives the response from that challenge, the attacker can perform an online cracking to extract user's NT hash (derived from password) from that response.
+So if an attacker can force a client to make a request using NTLMv1 to a server that attacker controls, the attacker may set the challenge to "1122334455667788", and when the server receives the response from that challenge, the attacker can perform an online cracking to extract user's NT hash (derived from password) from that response.
 
 >  Note:
 >

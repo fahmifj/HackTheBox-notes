@@ -1,0 +1,3 @@
+/images               (Status: 301) [Size: 319] [--> https://laboratory.htb/images/]
+/assets               (Status: 301) [Size: 319] [--> https://laboratory.htb/assets/]
+/server-status        (Status: 403) [Size: 280]
