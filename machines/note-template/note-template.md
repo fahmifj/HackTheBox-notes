@@ -69,6 +69,5 @@ Privilege Escalation:
 > - First attempt of exploitation.
 > - Things you have tried but failed.
 > - Things you want to do after gaining access
-
-
+> - Take a rest if you keep putting your note in here for more than 2 hours.
 
