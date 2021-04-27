@@ -1,0 +1,15 @@
+Developer","email":"sbauer@megacorp.htb","src":"sbauer.jpg"},{"id":2,"name":"Octavia
+Consultant","email":"okent@megacorp.htb","src":"okent.jpg"},{"id":3,"name":"Christian
+Manager","email":"ckane@megacorp.htb","src":"ckane.jpg"},{"id":4,"name":"Kimberly
+Analyst","email":"kpage@megacorp.htb","src":"kpage.jpg"},{"id":5,"name":"Shayna
+Manager","email":"shayna@megacorp.htb","src":"shayna.jpg"},{"id":6,"name":"James
+Lead","email":"james@megacorp.htb","src":"james.jpg"},{"id":7,"name":"Connor
+Developer","email":"cyork@megacorp.htb","src":"cyork.jpg"},{"id":8,"name":"Reya
+Support","email":"rmartin@megacorp.htb","src":"rmartin.jpg"},{"id":9,"name":"Zac
+Analyst","email":"zac@magacorp.htb","src":"zac.jpg"},{"id":10,"name":"Jorden
+Developer","email":"jorden@megacorp.htb","src":"jorden.jpg"},{"id":11,"name":"Alyx
+Engineer","email":"alyx@megacorp.htb","src":"alyx.jpg"},{"id":12,"name":"Ian
+Auditor","email":"ilee@megacorp.htb","src":"ilee.jpg"},{"id":13,"name":"Nikola
+Accounts","email":"nbourne@megacorp.htb","src":"nbourne.jpg"},{"id":14,"name":"Zachery
+Analyst","email":"zpowers@megacorp.htb","src":"zpowers.jpg"},{"id":15,"name":"Alessandro
+Developer","email":"aldom@megacorp.htb","src":"aldom.jpg"},{"id":16,"name":"MinatoTW","position":"CEO","email":"minato@megacorp.htb","src":"minato.jpg"},{"id":17,"name":"egre55","position":"CEO","email":"egre55@megacorp.htb","src":"egre55.jpg"}]
