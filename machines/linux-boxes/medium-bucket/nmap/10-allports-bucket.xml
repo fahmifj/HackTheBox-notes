@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Apr 22 12:20:28 2021 as: nmap -p- -oA nmap/10-allports-bucket -v 10.10.10.212 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA nmap/10-allports-bucket -v 10.10.10.212" start="1619108428" startstr="Thu Apr 22 12:20:28 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1619108428"/>
+<taskend task="Ping Scan" time="1619108428" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1619108428"/>
+<taskend task="SYN Stealth Scan" time="1619108491" extrainfo="65535 total ports"/>
+<host starttime="1619108428" endtime="1619108491"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.212" addrtype="ipv4"/>
+<hostnames>
+<hostname name="bucket.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="66849" rttvar="2009" to="100000"/>
+</host>
+<runstats><finished time="1619108491" timestr="Thu Apr 22 12:21:31 2021" elapsed="62.40" summary="Nmap done at Thu Apr 22 12:21:31 2021; 1 IP address (1 host up) scanned in 62.40 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

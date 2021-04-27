@@ -1,0 +1,6 @@
+/shell.txt            (Status: 500) [Size: 158]
+/shell.bak            (Status: 500) [Size: 158]
+/shell                (Status: 200) [Size: 0]
+/shell.html           (Status: 500) [Size: 158]
+/health               (Status: 200) [Size: 54]
+/server-status        (Status: 403) [Size: 278]

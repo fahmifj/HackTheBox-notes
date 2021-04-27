@@ -1,0 +1,14 @@
+#!/bin/bash
+read -p "[*] Box title: " box_title
+if [ "$box_title" != "" ]
+then
+	box_title=${box_title,,} # lowercase
+	box_title=${box_title// /} # remove spaces
+	path="./active-boxes/$box_title"
+	mkdir -p "$path"
+	cp -rT "./note-template/" "$path"
+	mv "$path/note-template.md" "$path/$box_title-notes.md"
+	echo "[+] Created note for \"$box_title\""
+else
+	echo "[-] Need blog title"
+fi

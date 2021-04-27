@@ -11,44 +11,44 @@ I publish the writeups on my personal blog and Medium.
 
 - OSCP-like: https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview#
   - ❔ → Active boxes
-  - ✔️+ → Listed in more challenging column
+  - ✓+ → Listed in more challenging column
   
     
 
 |  No  | Name         | OS          | Difficulty | OSCP-like | Write-up                                       |
 | :--: | :----------- | :---------- | :--------- | :-------- | :--------------------------------------------- |
-|  1   | OpenAdmin    | Linux       | Easy       | ✔️         | [Blog][openadmin-b] \| [Medium][openadmin-m]   |
-|  2   | Forest       | Windows     | Easy       | ✔️         | [Blog][forest-b] \| [Medium][forest-m]         |
-|  3   | Mango        | Linux       | Medium     | ✔️+        | Blog \| Medium                                 |
-|  4   | Remote       | Windows     | Easy       | ✔️         | [Blog][remote-b] \| [Medium][remote-m]         |
+|  1   | OpenAdmin    | Linux       | Easy       | ✓         | [Blog][openadmin-b] \| [Medium][openadmin-m]   |
+|  2   | Forest       | Windows     | Easy       | ✓         | [Blog][forest-b] \| [Medium][forest-m]         |
+|  3   | Mango        | Linux       | Medium     | ✓+        | Blog \| Medium                                 |
+|  4   | Remote       | Windows     | Easy       | ✓         | [Blog][remote-b] \| [Medium][remote-m]         |
 |  5   | Obscurity    | Linux       | Medium     | ❌         | Blog \| [Medium][obscurity-m]                  |
-|  6   | ServMon      | Windows     | Easy       | ✔️         | [Blog][servmon-b] \| [Medium][servmon-m]       |
+|  6   | ServMon      | Windows     | Easy       | ✓         | [Blog][servmon-b] \| [Medium][servmon-m]       |
 |  7   | Monteverde   | Windows     | Medium     | ❌         | Blog \| Medium                                 |
-|  8   | Sauna        | Windows     | Easy       | ✔️+        | [Blog][sauna-b] \| Medium                      |
+|  8   | Sauna        | Windows     | Easy       | ✓+        | [Blog][sauna-b] \| Medium                      |
 |  9   | Resolute     | Windows     | Medium     | ❌         | Blog \| Medium                                 |
-|  10  | Magic        | Linux       | Medium     | ✔️         | [Blog][magic-b] \| [Medium][magic-m]           |
-|  11  | Nest         | Windows     | Easy       | ✔️+        | [Blog][nest-b] \| [Medium][nest-m]             |
-|  12  | Admirer      | Linux       | Easy       | ✔️         | Blog \| Medium                                 |
+|  10  | Magic        | Linux       | Medium     | ✓         | [Blog][magic-b] \| [Medium][magic-m]           |
+|  11  | Nest         | Windows     | Easy       | ✓+        | [Blog][nest-b] \| [Medium][nest-m]             |
+|  12  | Admirer      | Linux       | Easy       | ✓         | Blog \| Medium                                 |
 |  13  | Traceback    | Linux       | Easy       | ❌         | Blog \| [Medium][traceback-b]                  |
 |  14  | Cache        | Linux       | Medium     | ❌         | Blog \| [Medium][cache-m]                      |
 |  15  | Multimaster  | Windows     | Insane     | ❌         | Blog \| Medium                                 |
-|  16  | Blunder      | Linux       | Easy       | ✔️         | Blog \| Medium                                 |
-|  17  | Cascade      | Windows     | Medium     | ✔️+        | [Blog][cascade-b] \| [Medium][cascade-m]       |
-|  18  | Tabby        | Linux       | Easy       | ✔️         | [Blog][tabby-b] \| [Medium][tabby-m]           |
-|  19  | SneakyMailer | Linux       | Medium     | ✔️         | Blog \| [Medium][sneakymailer-m]               |
-|  20  | Buff         | Windows     | Easy       | ✔️         | Blog \| [Medium][buff-m]                       |
-|  21  | Worker       | Windows     | Medium     | ✔️         | Blog \| [Medium][worker-m]                     |
-|  22  | Blackfield   | Windows     | Hard       | ✔️+        | Blog \| [Medium][blackfield-m]                 |
-|  23  | Omni         | Windows IoT | Easy       | ✔️         | Blog \| [Medium][omni-m]                       |
-|  24  | Passage      | Linux       | Medium     | ✔️         | Blog \| [Medium][passage-b]                    |
+|  16  | Blunder      | Linux       | Easy       | ✓         | Blog \| Medium                                 |
+|  17  | Cascade      | Windows     | Medium     | ✓+        | [Blog][cascade-b] \| [Medium][cascade-m]       |
+|  18  | Tabby        | Linux       | Easy       | ✓         | [Blog][tabby-b] \| [Medium][tabby-m]           |
+|  19  | SneakyMailer | Linux       | Medium     | ✓         | Blog \| [Medium][sneakymailer-m]               |
+|  20  | Buff         | Windows     | Easy       | ✓         | Blog \| [Medium][buff-m]                       |
+|  21  | Worker       | Windows     | Medium     | ✓         | Blog \| [Medium][worker-m]                     |
+|  22  | Blackfield   | Windows     | Hard       | ✓+        | Blog \| [Medium][blackfield-m]                 |
+|  23  | Omni         | Windows IoT | Easy       | ✓         | Blog \| [Medium][omni-m]                       |
+|  24  | Passage      | Linux       | Medium     | ✓         | Blog \| [Medium][passage-b]                    |
 |  25  | Bucket       | Linux       | Medium     | ❔         | [Blog][bucket-b] \| [Medium][bucket-m]         |
-|  26  | Fuse         | Windows     | Medium     | ✔️         | Blog \| Medium                                 |
-|  27  | Time         | Linux       | Medium     | ✔️         | Blog \| Medium                                 |
+|  26  | Fuse         | Windows     | Medium     | ✓         | Blog \| Medium                                 |
+|  27  | Time         | Linux       | Medium     | ✓         | Blog \| Medium                                 |
 |  28  | Reel2        | Windows     | Hard       | ❌         | Blog \| [Medium][reel2-m]                      |
 |  29  | Academy      | Linux       | Easy       | ❌         | Blog \| [Medium][academy-m]                    |
 |  30  | OpenKeyS     | OpenBSD     | Medium     | ❌         | Blog \| Medium                                 |
 |  31  | Compromised  | Linux       | Hard       | ❌         | Blog \| [Medium][compromised-m]                |
-|  32  | Doctor       | Linux       | Easy       | ✔️         | Blog \| [Medium][doctor-m]                     |
+|  32  | Doctor       | Linux       | Easy       | ✓         | Blog \| [Medium][doctor-m]                     |
 |  33  | ScriptKiddie | Linux       | Easy       | ❔         | Blog \| Medium                                 |
 |  34  | TheNotebook  | Linux       | Medium     | ❔         | Blog \| Medium                                 |
 |  35  | Delivery     | Linux       | Easy       | ❔         | Blog \| Medium                                 |
