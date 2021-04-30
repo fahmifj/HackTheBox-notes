@@ -4,11 +4,11 @@ if [ "$box_title" != "" ]
 then
 	box_title=${box_title,,} # lowercase
 	box_title=${box_title// /} # remove spaces
-	path="./active-boxes/$box_title"
-	mkdir -p "$path"
-	cp -rT "./note-template/" "$path"
-	mv "$path/note-template.md" "$path/$box_title-notes.md"
-	echo "[+] Created note for \"$box_title\""
+	path="./active-boxes/$box_title" # define path
+	mkdir -p "$path" # create box folder
+	cp -rT "./note-template/" "$path" # copy the whole template content to the box folder
+	mv "$path/note-template.md" "$path/$box_title-notes.md" # rename the template note according to the box name
+	echo "[+] Created note for \"$box_title\"" 
 else
-	echo "[-] Need blog title"
+	echo "[-] Need box title"
 fi

@@ -1,56 +1,58 @@
 # 00 - Loot
 
-## Credentials
+Valid Credentials:
 
-- a
-- b
-- c
+| Service | Username | Password |
+| ------- | -------- | -------- |
+|         |          |          |
+|         |          |          |
+|         |          |          |
 
-### Usernames
-
-```
-
-```
-
-### Passwords
+Valid Usernames
 
 ```
 
 ```
 
-### Emails
+Passwords
 
-# 05 - Summary
+```
 
-Foothold: 
+```
 
-- 
-- 
+Emails
 
-Privilege Escalation:
+```
 
-- 
-- 
+```
+
+
 
 # 10 - Reconnaissance
 
-## Nmap
+## Port scanning - Nmap
 
-### Initial scan
+### TCP
 
-```
-
-```
-
-### Full scan
+Initial scan
 
 ```
 
 ```
 
+Full scan
 
+```
+
+```
+
+### UDP
 
 # 15 - Enumeration
+
+## TCP 21 - FTP
+
+## TCP 80 - Website
 
 
 
@@ -62,12 +64,24 @@ Privilege Escalation:
 
 
 
-# 99 - Trial-error
+# 90 - Summary
+
+Foothold: 
+
+- 
+- 
+
+Privilege Escalation:
+
+- 
+- 
+
+# 99 - To do and Trial-error
 
 > What to put here:
 >
+> - Options you want to try
 > - First attempt of exploitation.
 > - Things you have tried but failed.
 > - Things you want to do after gaining access
 > - Take a rest if you keep putting your note in here for more than 2 hours.
-
