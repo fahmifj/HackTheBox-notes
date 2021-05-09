@@ -3,7 +3,7 @@ active-boxes/
 active-challenges/
 .vscode/
 temp/
-dumps/
+dump/
 ysoserial*
 logs/
 

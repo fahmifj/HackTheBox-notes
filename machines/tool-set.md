@@ -1,0 +1,19 @@
+- Kali Linux (Attacking Machine) - https://www.kali.org/
+- Nmap - Preinstalled in Kali Linux
+- smbclient - Preinstalled in Kali Linux
+- metasploit - Preinstalled in Kali Linux
+- rpcclient - Preinstalled in Kali Linux
+- smbget - Preinstalled in Kali Linux
+- Socat - Preinstalled on Kali Linux
+- Gobuster - https://github.com/OJ/gobuster
+- Impacket - https://github.com/SecureAuthCorp/impacket
+- IOXIDResolver - https://github.com/mubix/IOXIDResolver
+- CrackMapExec - https://github.com/byt3bl33d3r/CrackMapExec
+- Evil-WinRM - https://github.com/Hackplayers/evil-winrm
+- kerbrute - https://github.com/ropnop/kerbrute
+- pyKerbrute (with modification) - https://github.com/3gstudent/pyKerbrute
+- Responder - https://github.com/lgandx/Responder
+- BloodHound - https://github.com/BloodHoundAD/BloodHound
+- dnSpy - https://github.com/dnSpy/dnSpy/
+- John The Ripper - https://www.openwall.com/john/
+- ldapdomaindump - https://github.com/dirkjanm/ldapdomaindump

@@ -1,14 +1,29 @@
 #!/bin/bash
+
+# VH and HTB uses the same template
+skel_path="/c/Users/fahmi/home/notes/htb/machines/note-template/"
 read -p "[*] Box title: " box_title
+read -p "[*] Category (htb/vh): " box_cat
 if [ "$box_title" != "" ]
 then
 	box_title=${box_title,,} # lowercase
 	box_title=${box_title// /} # remove spaces
-	path="./active-boxes/$box_title" # define path
-	mkdir -p "$path" # create box folder
-	cp -rT "./note-template/" "$path" # copy the whole template content to the box folder
-	mv "$path/note-template.md" "$path/$box_title-notes.md" # rename the template note according to the box name
-	echo "[+] Created note for \"$box_title\"" 
+	if [ "$box_cat" == "htb" ]
+	then	
+		# define path for htb
+		path="/c/Users/fahmi/home/notes/htb/machines/active-boxes/$box_title" 
+	elif [ "$box_cat" == "vh" ]
+	then
+		# define path for vh
+		path="/c/Users/fahmi/home/notes/vulnhub/$box_title/" 
+	fi
+	# create box folder
+	mkdir -p "$path" 
+	# copy the whole template content to the box folder
+	cp -rT "$skel_path" "$path" 
+	# rename the template note according to the box name
+	mv "$path/note-template.md" "$path/$box_title-notes.md" 
+	echo "[+] Created note for \"$box_title\""
 else
 	echo "[-] Need box title"
 fi
