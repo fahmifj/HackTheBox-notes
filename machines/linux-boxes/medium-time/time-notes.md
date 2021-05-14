@@ -941,35 +941,39 @@ Patch script (executed from Time), Jackson hosted from my Kali
 
 - [Jackson 2.11](https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.11.0/)
 
-```
+```bash
 #!/bin/bash
+# ./time.sh patch [ip]
 project_path="/opt/json_project/"
 new_jackson="jackson-core-2.11.0.jar"
 old_jackson="jackson-core-2.9.8.jar"
 
 if [ "$1" == "patch" ]; then
-    
-    cd /tmp
-    wget "http://$2/$new_jackson"
-    wget "http://$2/parse.rb"
-
-    # backup the original code
-    mv $project_path$old_jackson $project_path"classpath/"${old_jackson//.jar/.bak}
-    mv $project_path"parse.rb" $project_path"parse.rb.bak"
-
-    # move the updated parser and jackson
-    mv /tmp/$new_jackson $project_path"classpath/"$new_jackson 
-    mv /tmp/parse.rb $project_path"parse.rb.bak"
-
+	# backup the original code
+	mkdir -p /dev/shm/orig/
+	mv $project_path"classpath/"$old_jackson /dev/shm/orig/
+	mv $project_path"parse.rb" /dev/shm/orig/
+	
+	# These file hosted from my machine
+	curl -s "http://$2/$new_jackson" > /tmp/$new_jackson
+	curl -s "http://$2/parse.rb" >  /tmp/parse.rb
+	
+	# move the updated parser and jackson
+	cp /tmp/$new_jackson $project_path"classpath/"$new_jackson 
+	cp /tmp/parse.rb "$project_path"
+	chmod +x $project_path"parse.rb"
+	
 elif [ "$1" == "restore" ]; then
-
-    rm /tmp/"$new_jackson"
-    rm /tmp/"parse.rb"
-    rm $project_path$new_jackson
-    rm $project_path"parse.rb"
-
-    mv $project_path"classpath/"${old_jackson//.jar/.bak} $project_path"classpath/"$old_jackson
-    mv $project_path"parse.rb.bak" $project_path"parse.rb"
+	rm $project_path"classpath/"$new_jackson
+	rm $project_path"parse.rb"
+	
+	mv "/dev/shm/orig/$old_jackson" $project_path"classpath/"
+	mv "/dev/shm/orig/parse.rb" $project_path
+	
+	rm /tmp/$new_jackson 
+	rm /tmp/parse.rb
+	rm -r /dev/shm/orig/
+	
 fi
 ```
 

@@ -15,48 +15,48 @@ I publish the writeups on my personal blog and Medium.
   
     
 
-|  No  | Name         | OS          | Difficulty | OSCP-like | Write-up                                       |
-| :--: | :----------- | :---------- | :--------- | :-------- | :--------------------------------------------- |
-|  1   | OpenAdmin    | Linux       | Easy       | ✓         | [Blog][openadmin-b] \| [Medium][openadmin-m]   |
-|  2   | Forest       | Windows     | Easy       | ✓         | [Blog][forest-b] \| [Medium][forest-m]         |
-|  3   | Mango        | Linux       | Medium     | ✓+        | Blog \| Medium                                 |
-|  4   | Remote       | Windows     | Easy       | ✓         | [Blog][remote-b] \| [Medium][remote-m]         |
-|  5   | Obscurity    | Linux       | Medium     | ❌         | Blog \| [Medium][obscurity-m]                  |
-|  6   | ServMon      | Windows     | Easy       | ✓         | [Blog][servmon-b] \| [Medium][servmon-m]       |
-|  7   | Monteverde   | Windows     | Medium     | ❌         | Blog \| Medium                                 |
-|  8   | Sauna        | Windows     | Easy       | ✓+        | [Blog][sauna-b] \| Medium                      |
-|  9   | Resolute     | Windows     | Medium     | ❌         | Blog \| Medium                                 |
-|  10  | Magic        | Linux       | Medium     | ✓         | [Blog][magic-b] \| [Medium][magic-m]           |
-|  11  | Nest         | Windows     | Easy       | ✓+        | [Blog][nest-b] \| [Medium][nest-m]             |
-|  12  | Admirer      | Linux       | Easy       | ✓         | Blog \| Medium                                 |
-|  13  | Traceback    | Linux       | Easy       | ❌         | Blog \| [Medium][traceback-b]                  |
-|  14  | Cache        | Linux       | Medium     | ❌         | Blog \| [Medium][cache-m]                      |
-|  15  | Multimaster  | Windows     | Insane     | ❌         | Blog \| Medium                                 |
-|  16  | Blunder      | Linux       | Easy       | ✓         | Blog \| Medium                                 |
-|  17  | Cascade      | Windows     | Medium     | ✓+        | [Blog][cascade-b] \| [Medium][cascade-m]       |
-|  18  | Tabby        | Linux       | Easy       | ✓         | [Blog][tabby-b] \| [Medium][tabby-m]           |
-|  19  | SneakyMailer | Linux       | Medium     | ✓         | Blog \| [Medium][sneakymailer-m]               |
-|  20  | Buff         | Windows     | Easy       | ✓         | Blog \| [Medium][buff-m]                       |
-|  21  | Worker       | Windows     | Medium     | ✓         | Blog \| [Medium][worker-m]                     |
-|  22  | Blackfield   | Windows     | Hard       | ✓+        | Blog \| [Medium][blackfield-m]                 |
-|  23  | Omni         | Windows IoT | Easy       | ✓         | Blog \| [Medium][omni-m]                       |
-|  24  | Passage      | Linux       | Medium     | ✓         | Blog \| [Medium][passage-b]                    |
-|  25  | Bucket       | Linux       | Medium     | ❔         | [Blog][bucket-b] \| [Medium][bucket-m]         |
-|  26  | Fuse         | Windows     | Medium     | ✓         | Blog \| Medium                                 |
-|  27  | Time         | Linux       | Medium     | ✓         | Blog \| Medium                                 |
-|  28  | Reel2        | Windows     | Hard       | ❌         | Blog \| [Medium][reel2-m]                      |
-|  29  | Academy      | Linux       | Easy       | ❌         | Blog \| [Medium][academy-m]                    |
-|  30  | OpenKeyS     | OpenBSD     | Medium     | ❌         | Blog \| Medium                                 |
-|  31  | Compromised  | Linux       | Hard       | ❌         | Blog \| [Medium][compromised-m]                |
-|  32  | Doctor       | Linux       | Easy       | ✓         | Blog \| [Medium][doctor-m]                     |
-|  33  | ScriptKiddie | Linux       | Easy       | ❔         | Blog \| Medium                                 |
-|  34  | TheNotebook  | Linux       | Medium     | ❔         | Blog \| Medium                                 |
-|  35  | Delivery     | Linux       | Easy       | ❔         | Blog \| Medium                                 |
-|  36  | Tenet        | Linux       | Medium     | ❔         | Blog \| Medium                                 |
-|  37  | Ready        | Linux       | Medium     | ❔         | Blog \| Medium                                 |
-|  38  | Laboratory   | Linux       | Easy       | ❌         | [Blog][laboratory-b] \| [Medium][laboratory-m] |
-|  39  | Armageddon   | Linux       | Easy       | ❔         | Blog \| Medium                                 |
-|  40  | APT          | Windows     | Insane     | ❌         | [Blog][apt-b] \| [Medium][apt-m]               |
+|  No  | Name         | OS          | Difficulty | OSCP-like | Write-up                                           |
+| :--: | :----------- | :---------- | :--------- | :-------- | :------------------------------------------------- |
+|  1   | OpenAdmin    | Linux       | Easy       | ✓         | [Blog][openadmin-b] \| [Medium][openadmin-m]       |
+|  2   | Forest       | Windows     | Easy       | ✓         | [Blog][forest-b] \| [Medium][forest-m]             |
+|  3   | Mango        | Linux       | Medium     | ✓+        | Blog \| Medium                                     |
+|  4   | Remote       | Windows     | Easy       | ✓         | [Blog][remote-b] \| [Medium][remote-m]             |
+|  5   | Obscurity    | Linux       | Medium     | ❌         | Blog \| [Medium][obscurity-m]                      |
+|  6   | ServMon      | Windows     | Easy       | ✓         | [Blog][servmon-b] \| [Medium][servmon-m]           |
+|  7   | Monteverde   | Windows     | Medium     | ❌         | Blog \| Medium                                     |
+|  8   | Sauna        | Windows     | Easy       | ✓+        | [Blog][sauna-b] \| Medium                          |
+|  9   | Resolute     | Windows     | Medium     | ❌         | Blog \| Medium                                     |
+|  10  | Magic        | Linux       | Medium     | ✓         | [Blog][magic-b] \| [Medium][magic-m]               |
+|  11  | Nest         | Windows     | Easy       | ✓+        | [Blog][nest-b] \| [Medium][nest-m]                 |
+|  12  | Admirer      | Linux       | Easy       | ✓         | Blog \| Medium                                     |
+|  13  | Traceback    | Linux       | Easy       | ❌         | Blog \| [Medium][traceback-b]                      |
+|  14  | Cache        | Linux       | Medium     | ❌         | Blog \| [Medium][cache-m]                          |
+|  15  | Multimaster  | Windows     | Insane     | ❌         | Blog \| Medium                                     |
+|  16  | Blunder      | Linux       | Easy       | ✓         | Blog \| Medium                                     |
+|  17  | Cascade      | Windows     | Medium     | ✓+        | [Blog][cascade-b] \| [Medium][cascade-m]           |
+|  18  | Tabby        | Linux       | Easy       | ✓         | [Blog][tabby-b] \| [Medium][tabby-m]               |
+|  19  | SneakyMailer | Linux       | Medium     | ✓         | [Blog][sneakymailer-b] \| [Medium][sneakymailer-m] |
+|  20  | Buff         | Windows     | Easy       | ✓         | [Blog][buff-b] \| [Medium][buff-m]                 |
+|  21  | Worker       | Windows     | Medium     | ✓         | [Blog][worker-b] \| [Medium][worker-m]             |
+|  22  | Blackfield   | Windows     | Hard       | ✓+        | [Blog][blackfield-b] \| [Medium][blackfield-m]     |
+|  23  | Omni         | Windows IoT | Easy       | ✓         | [Blog][omni-b] \| [Medium][omni-m]                 |
+|  24  | Passage      | Linux       | Medium     | ✓         | [Blog][passage-b] \| [Medium][passage-b]           |
+|  25  | Bucket       | Linux       | Medium     | ❔         | [Blog][bucket-b] \| [Medium][bucket-m]             |
+|  26  | Fuse         | Windows     | Medium     | ✓         | Blog \| Medium                                     |
+|  27  | Time         | Linux       | Medium     | ✓         | [Blog][time-m] \| Medium                           |
+|  28  | Reel2        | Windows     | Hard       | ❌         | Blog \| [Medium][reel2-m]                          |
+|  29  | Academy      | Linux       | Easy       | ❌         | Blog \| [Medium][academy-m]                        |
+|  30  | OpenKeyS     | OpenBSD     | Medium     | ❌         | Blog \| Medium                                     |
+|  31  | Compromised  | Linux       | Hard       | ❌         | Blog \| [Medium][compromised-m]                    |
+|  32  | Doctor       | Linux       | Easy       | ✓         | [Blog][doctor-b] \| [Medium][doctor-m]             |
+|  33  | ScriptKiddie | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  34  | TheNotebook  | Linux       | Medium     | ❔         | Blog \| Medium                                     |
+|  35  | Delivery     | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  36  | Tenet        | Linux       | Medium     | ❔         | Blog \| Medium                                     |
+|  37  | Ready        | Linux       | Medium     | ❔         | Blog \| Medium                                     |
+|  38  | Laboratory   | Linux       | Easy       | ❌         | [Blog][laboratory-b] \| [Medium][laboratory-m]     |
+|  39  | Armageddon   | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  40  | APT          | Windows     | Insane     | ❌         | [Blog][apt-b] \| [Medium][apt-m]                   |
 
 <!--  Links -->
 
@@ -104,7 +104,7 @@ I publish the writeups on my personal blog and Medium.
 [ tabby-b ]: https://fahmifj.github.io/writeup/htb-tabby/
 [ tabby-m ]: https://fahmifj.medium.com/hack-the-box-tabby-10-10-10-194-scratch-27ec40161646
 
-[ sneakymailer-b ]: https://https://fahmifj.github.io/writeup/htb-sneakymailer/
+[ sneakymailer-b ]: https://fahmifj.github.io/writeup/htb-sneakymailer/
 [ sneakymailer-m ]: https://fahmifj.medium.com/hack-the-box-sneakymailer-10-10-10-197-scratch-cde6f3d21637
 
 [ buff-b ]: https://fahmifj.github.io/writeup/htb-buff/

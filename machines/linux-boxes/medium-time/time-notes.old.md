@@ -21,7 +21,6 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 # Nmap done at Sat Apr 10 16:34:52 2021 -- 1 IP address (1 host up) scanned in 10.29 seconds
-
 ```
 
 
