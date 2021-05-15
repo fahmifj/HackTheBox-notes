@@ -5,7 +5,7 @@ active-challenges/
 temp/
 dump/
 ysoserial*
-logs/
+log*/
 
 # Ignore file
 alpine*

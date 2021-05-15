@@ -1,6 +1,6 @@
 # 00 - Loot
 
-Valid Credentials:
+Credentials:
 
 | Service | Username | Password | Found at |
 | ------- | -------- | -------- | -------- |
@@ -20,7 +20,7 @@ Emails
 
 ```
 
-
+...
 
 # 10 - Reconnaissance
 
@@ -58,6 +58,10 @@ Full scan
 
 
 
+# 30 - Post-Exploit
+
+
+
 # 90 - Summary
 
 Foothold: 
@@ -70,12 +74,11 @@ Privilege Escalation:
 - 
 - 
 
-# 99 - To do and Trial-error
+# 99 - Trial-error/Try list
 
 > What to put here:
 >
-> - Options you want to try
-> - First attempt of exploitation.
-> - Things you have tried but failed.
-> - Things you want to do after gaining access
-> - Take a rest if you keep putting your note in here for more than 2 hours.
+> - Options you want to try (upper=highest priority, lower=try later)
+> - Track things you have tried but failed.
+> - Tips/Trick you learned during completing the box.
+> - Take a rest if you keep putting/looking your note in here for more than 45 minutes.
