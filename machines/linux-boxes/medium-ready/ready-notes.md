@@ -4,8 +4,8 @@ Credentials
 
 | Service | Username | Password               | Found at                                         |
 | ------- | -------- | ---------------------- | ------------------------------------------------ |
-| su      | root     | wW59U!ZKMbG9+*#h       | `/root_pass`                                     |
-| ?       | ?        | YG65407Bjqvv9A0a8Tm_7w | `/opt/backup/gitlab.rb`                          |
+| su      | root     | wW59U!ZKMbG9+*#h       | `/opt/backup/gitlab.rb`                          |
+| ?       | ?        | YG65407Bjqvv9A0a8Tm_7w | `/root_pass`                                     |
 | ?       | ?        | %%cHzhNC=k9yYN!T       | `/root/ready-channel/sites/default/settings.php` |
 
 Valid usernames
@@ -402,6 +402,8 @@ total 100
 -rw-r--r-- 1 root root 79639 Dec  1 19:20 gitlab.rb
 ```
 
+Finding "pass"
+
 ```
 git@gitlab:/opt/backup$ grep -Ri "pass"
 gitlab.rb:#### Email account password
@@ -417,7 +419,7 @@ gitlab.rb:gitlab_rails['smtp_password'] = "wW59U!ZKMbG9+*#h"
 ...<SNIP>...
 ```
 
-
+Contents of `docker-compose.yml`
 
 ```
 git@gitlab:/opt/backup$ cat docker-compose.yml 
@@ -490,7 +492,7 @@ git@gitlab:/$ cat /opt/backup/docker-compose.yml
 ...<SNIP>...
 ```
 
-it seems the container runs with privileged flag.
+It seems the container runs with privileged flag.
 
 > The --privileged flag allows the container to have access to the host devices
 
@@ -513,9 +515,7 @@ groups=0(root)
 
 ![image-20210514193159515](_resources/image-20210514193159515.png)
 
-`CAP_SYS_ADMIN` can mount/unmount filesystems.
-
-The container can mount the root directory of the host.
+`CAP_SYS_ADMIN` can mount/unmount filesystems. The container can mount the root directory of the host.
 
 ### Mount Host Drive to Container
 
@@ -571,8 +571,6 @@ Device        Start      End  Sectors Size Type
 /dev/sda2      4096 37746687 37742592  18G Linux filesystem # Host drive.
 /dev/sda3  37746688 41940991  4194304   2G Linux swap
 ```
-
-`/dev/sda2` is the host drive.
 
 Mount `/dev/sda2` to `/media/iamf`
 
@@ -638,9 +636,9 @@ b7f98681505cd39
 
 
 
-
-
 # 30 - Post Exploit 
+
+> Large files stored in ./post-exploit
 
 ### OS
 
@@ -696,7 +694,7 @@ MariaDB [drupal]> select name,pass from users;
 MariaDB [drupal]> 
 ```
 
-Mysql:
+MySQL:
 
 ```
 MariaDB [mysql]> select Host,User,Password from user;
@@ -726,13 +724,6 @@ Privilege Escalation:
 - Mount the root directory of the host to container.
 
 # 99 - Trial-error/Try list
-
-> What to put here:
->
-> - Options you want to try (upper=highest priority, lower=try later)
-> - Track things you have tried but failed.
-> - Tips/Trick you learned during completing the box.
-> - Take a rest if you keep putting/looking your note in here for more than 45 minutes.
 
 ## GitLab 12.9.0 LFI/LFI2RCE (fail)
 
