@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 21 15:06:32 2021 as: nmap -p22,80,8065 --min-rate 1000 -sC --reason -oA nmap/10-tcp-allport-delivery 10.10.10.222
+Host: 10.10.10.222 ()	Status: Up
+Host: 10.10.10.222 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 8065/open/tcp/////
+# Nmap done at Fri May 21 15:06:37 2021 -- 1 IP address (1 host up) scanned in 5.05 seconds

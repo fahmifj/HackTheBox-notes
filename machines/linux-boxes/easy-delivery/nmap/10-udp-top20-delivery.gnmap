@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri May 21 15:12:33 2021 as: nmap -sU -sV -n --top-ports 20 -oA nmap/10-udp-top20-delivery 10.10.10.222
+Host: 10.10.10.222 ()	Status: Up
+Host: 10.10.10.222 ()	Ports: 53/closed/udp//domain///, 67/closed/udp//dhcps///, 68/closed/udp//dhcpc///, 69/closed/udp//tftp///, 123/closed/udp//ntp///, 135/closed/udp//msrpc///, 137/closed/udp//netbios-ns///, 138/closed/udp//netbios-dgm///, 139/closed/udp//netbios-ssn///, 161/closed/udp//snmp///, 162/closed/udp//snmptrap///, 445/closed/udp//microsoft-ds///, 500/closed/udp//isakmp///, 514/closed/udp//syslog///, 520/closed/udp//route///, 631/open|filtered/udp//ipp///, 1434/closed/udp//ms-sql-m///, 1900/closed/udp//upnp///, 4500/closed/udp//nat-t-ike///, 49152/closed/udp//unknown///
+# Nmap done at Fri May 21 15:14:32 2021 -- 1 IP address (1 host up) scanned in 118.86 seconds

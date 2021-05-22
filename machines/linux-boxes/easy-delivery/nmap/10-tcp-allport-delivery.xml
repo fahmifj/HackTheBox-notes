@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri May 21 15:06:32 2021 as: nmap -p22,80,8065 -&#45;min-rate 1000 -sC -&#45;reason -oA nmap/10-tcp-allport-delivery 10.10.10.222 -->
+<nmaprun scanner="nmap" args="nmap -p22,80,8065 -&#45;min-rate 1000 -sC -&#45;reason -oA nmap/10-tcp-allport-delivery 10.10.10.222" start="1621623992" startstr="Fri May 21 15:06:32 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,8065"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1621623993" endtime="1621623997"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 9c:40:fa:85:9b:01:ac:ac:0e:bc:0c:19:51:8a:ee:27 (RSA)&#xa;  256 5a:0c:c0:3b:9b:76:55:2e:6e:c4:f4:b9:5d:76:17:09 (ECDSA)&#xa;  256 b7:9d:f7:48:9d:a2:f2:76:30:fd:42:d3:35:3a:80:8c (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCq549E025Q9FR27LDR6WZRQ52ikKjKUQLmE9ndEKjB0i1qOoL+WzkvqTdqEU6fFW6AqUIdSEd7GMNSMOk66otFgSoerK6MmH5IZjy4JqMoNVPDdWfmEiagBlG3H7IZ7yAO8gcg0RRrIQjE7XTMV09GmxEUtjojoLoqudUvbUi8COHCO6baVmyjZRlXRCQ6qTKIxRZbUAo0GOY8bYmf9sMLf70w6u/xbE2EYDFH+w60ES2K906x7lyfEPe73NfAIEhHNL8DBAUfQWzQjVjYNOLqGp/WdlKA1RLAOklpIdJQ9iehsH0q6nqjeTUv47mIHUiqaM+vlkCEAN3AAQH5mB/1</elem>
+<elem key="fingerprint">9c40fa859b01acac0ebc0c19518aee27</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAiAKnk2lw0GxzzqMXNsPQ1bTk35WwxCa3ED5H34T1yYMiXnRlfssJwso60D34/IM8vYXH0rznR9tHvjdN7R3hY=</elem>
+<elem key="fingerprint">5a0cc03b9b76552e6ec4f4b95d761709</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEV5D6eYjySqfhW4l4IF1SZkZHxIRihnY6Mn6D8mLEW7</elem>
+<elem key="fingerprint">b79df7489da2f27630fd42d3353a808c</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/><script id="http-title" output="Welcome"><elem key="title">Welcome</elem>
+</script></port>
+<port protocol="tcp" portid="8065"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+</ports>
+<times srtt="453371" rttvar="262268" to="1502443"/>
+</host>
+<runstats><finished time="1621623997" timestr="Fri May 21 15:06:37 2021" elapsed="5.05" summary="Nmap done at Fri May 21 15:06:37 2021; 1 IP address (1 host up) scanned in 5.05 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

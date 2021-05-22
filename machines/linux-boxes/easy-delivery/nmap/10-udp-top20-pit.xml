@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri May 21 15:11:11 2021 as: nmap -sU -sV -n -&#45;top-ports 20 -oA nmap/10-udp-top20-pit 10.10.10.241 -->
+<nmaprun scanner="nmap" args="nmap -sU -sV -n -&#45;top-ports 20 -oA nmap/10-udp-top20-pit 10.10.10.241" start="1621624271" startstr="Fri May 21 15:11:11 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="20" services="53,67-69,123,135,137-139,161-162,445,500,514,520,631,1434,1900,4500,49152"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="Ping Scan" time="1621624272" percent="100.00" remaining="0" etc="1621624272"/>

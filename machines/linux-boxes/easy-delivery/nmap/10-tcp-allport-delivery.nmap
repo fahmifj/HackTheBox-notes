@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Fri May 21 15:06:32 2021 as: nmap -p22,80,8065 --min-rate 1000 -sC --reason -oA nmap/10-tcp-allport-delivery 10.10.10.222
+Nmap scan report for 10.10.10.222
+Host is up, received echo-reply ttl 63 (0.45s latency).
+
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack ttl 63
+| ssh-hostkey: 
+|   2048 9c:40:fa:85:9b:01:ac:ac:0e:bc:0c:19:51:8a:ee:27 (RSA)
+|   256 5a:0c:c0:3b:9b:76:55:2e:6e:c4:f4:b9:5d:76:17:09 (ECDSA)
+|_  256 b7:9d:f7:48:9d:a2:f2:76:30:fd:42:d3:35:3a:80:8c (ED25519)
+80/tcp   open  http    syn-ack ttl 63
+|_http-title: Welcome
+8065/tcp open  unknown syn-ack ttl 63
+
+# Nmap done at Fri May 21 15:06:37 2021 -- 1 IP address (1 host up) scanned in 5.05 seconds
