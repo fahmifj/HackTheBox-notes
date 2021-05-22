@@ -28,19 +28,15 @@ Emails
 
 ### TCP
 
-Initial scan
+Full scan.
 
 ```
-
-```
-
-Full scan
-
-```
-
+nmap -p- --min-rate 1000 --reason -oA nmap/10-tcp-allport-$boxname$ 10.10.10.10
 ```
 
 ### UDP
+
+Top 20 TCP
 
 # 15 - Enumeration
 
