@@ -463,7 +463,7 @@ select username,Password from Users;
 select username,password from Users;
 ```
 
-Content ofs `.viminfo`:
+Contents of `.viminfo`:
 
 ```
 maildeliverer@Delivery:~$ cat .viminfo | grep -v '^#'
@@ -578,7 +578,7 @@ Hints:
 
 ![image-20210522043256934](_resources/image-20210522043256934.png)
 
-I remember exactly that ippsec has shown several techniques on how to generate a variant of "seasonal passwords" on Forest https://www.youtube.com/watch?v=H9FcE_FMZio&t=730s.
+I remember exactly that ippsec has shown several techniques on how to generate a variant of "seasonal passwords" on Forest https://www.youtube.com/watch?v=H9FcE_FMZio&t=730s. 
 
 Password length is 15
 
@@ -630,7 +630,7 @@ The password is `PleaseSubscribe!21`
 maildeliverer@Delivery:~$ su root
 Password: 
 root@Delivery:/home/maildeliverer# id
-uid=0(root) gid=0(root) groups=0(root
+uid=0(root) gid=0(root) groups=0(root)
 ```
 
 Root flag

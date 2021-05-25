@@ -1,13 +1,14 @@
 # Ignore notes for active boxes
+.vscode/
+.obisidian/
 active-boxes/
 active-challenges/
-.vscode/
 temp/
 dump/
 ysoserial*
 log*/
 
-# Ignore file
+# Ignore executable files
 alpine*
 *.exe
 *.swp
