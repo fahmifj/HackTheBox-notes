@@ -2,10 +2,10 @@
 
 This section contains notes and other resources from the retired machines I've owned.
 
-I publish the writeups on my personal blog and Medium.
+Some writeups are available at:
 
-- https://fahmifj.github.io/writeup/ (better in formatting)
-- https://fahmifj.medium.com/ (a bit shorter)
+- https://fahmifj.github.io/writeups/hackthebox/
+- https://fahmifj.medium.com/
 
 **Note:**
 
@@ -49,41 +49,48 @@ I publish the writeups on my personal blog and Medium.
 |  30  | OpenKeyS     | OpenBSD     | Medium     | ❌         | Blog \| Medium                                     |
 |  31  | Compromised  | Linux       | Hard       | ❌         | Blog \| [Medium][compromised-m]                    |
 |  32  | Doctor       | Linux       | Easy       | ✓         | [Blog][doctor-b] \| [Medium][doctor-m]             |
-|  33  | ScriptKiddie | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  33  | ScriptKiddie | Linux       | Easy       | ❌         | Blog \| Medium                                     |
 |  34  | TheNotebook  | Linux       | Medium     | ❔         | Blog \| Medium                                     |
-|  35  | Delivery     | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  35  | Delivery     | Linux       | Easy       | ❌         | Blog \| Medium                                     |
 |  36  | Tenet        | Linux       | Medium     | ❔         | Blog \| Medium                                     |
 |  37  | Ready        | Linux       | Medium     | ❔         | Blog \| Medium                                     |
 |  38  | Laboratory   | Linux       | Easy       | ❌         | [Blog][laboratory-b] \| [Medium][laboratory-m]     |
 |  39  | Armageddon   | Linux       | Easy       | ❔         | Blog \| Medium                                     |
 |  40  | APT          | Windows     | Insane     | ❌         | [Blog][apt-b] \| [Medium][apt-m]                   |
+|  41  | Spectra      | FreeBSD     | Easy       | ❔         | Blog \| Medium                                     |
+|  42  | Love         | Windows     | Easy       | ❔         | Blog \| Medium                                     |
+|  43  | Atom         | Windows     | Easy       | ❔         | Blog \|Medium                                      |
+|  44  | Schooled     | FreeBSD     | Medium     | ❔         | Blog \|Medium                                      |
+|  45  | Pit          | Linux       | Medium     | ❔         | Blog \| Medium                                     |
+|  46  | Knife        | Linux       | Easy       | ❔         | Blog \| Medium                                     |
+|  47  | Cap          | Linux       | Easy       | ❔         | Blog \|Medium                                      |
 
 <!--  Links -->
 
-[ openadmin-b ]: https://fahmifj.github.io/writeup/htb-openadmin/
+[ openadmin-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-openadmin/
 [ openadmin-m ]: https://medium.com/p/hack-the-box-openadmin-10-10-10-171-writeup-e3851f7763f
 
-[ forest-b ]: https://fahmifj.github.io/writeup/htb-forest/
+[ forest-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-forest/
 [ forest-m ]: https://medium.com/p/hack-the-box-forest-10-10-10-161-writeup-7c1e38bde268
 
-[ remote-b ]: https://fahmifj.github.io/writeup/htb-remote/
+[ remote-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-remote/
 [ remote-m ]: https://medium.com/p/hack-the-box-remote-10-10-10-180-scratch-91ed321d99d9
 
 [ obscurity-m ]: https://medium.com/p/hack-the-box-obscurity-10-10-10-168-writeup-3867fc82a94
 
-[ servmon-b ]: https://fahmifj.github.io/writeup/htb-servmon/
+[ servmon-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-servmon/
 [ servmon-m ]: https://medium.com/p/hack-the-box-servmon-10-10-10-184-scratch-78c115a7597
 
 [ monteverde ]: https:///
 
-[ sauna-b ]: https://fahmifj.github.io/writeup/htb-sauna/
+[ sauna-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-sauna/
 
 [ resolute ]: https:///
 
-[ magic-b ]: https://fahmifj.github.io/writeup/htb-magic/
+[ magic-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-magic/
 [ magic-m ]: https://fahmifj.medium.com/hack-the-box-magic-10-10-10-185-scratch-f534fce85b66
 
-[ nest-b ]: https://fahmifj.github.io/writeup/htb-nest/
+[ nest-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-nest/
 [ nest-m ]: https://fahmifj.medium.com/hack-the-box-nest-10-10-10-178-scratch-4be5e7e29035
 
 [ admirer ]: https:///
@@ -91,51 +98,51 @@ I publish the writeups on my personal blog and Medium.
 [ traceback-b ]: https:///
 [ traceback-m ]: https://fahmifj.medium.com/hack-the-box-traceback-10-10-10-181-scratch-7ae9ce56aa43
 
-[ cache-b ]: https://fahmifj.github.io/writeup/htb-cache/
+[ cache-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-cache/
 [ cache-m ]: https:///
 
 [ multimaster ]: https:///
 
 [ blunder ]: https:///
 
-[ cascade-b ]: https://fahmifj.github.io/writeup/htb-cascade/
+[ cascade-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-cascade/
 [ cascade-m ]: https://fahmifj.medium.com/hack-the-box-cascade-10-10-10-182-writeup-2051c05205c6
 
-[ tabby-b ]: https://fahmifj.github.io/writeup/htb-tabby/
+[ tabby-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-tabby/
 [ tabby-m ]: https://fahmifj.medium.com/hack-the-box-tabby-10-10-10-194-scratch-27ec40161646
 
-[ sneakymailer-b ]: https://fahmifj.github.io/writeup/htb-sneakymailer/
+[ sneakymailer-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-sneakymailer/
 [ sneakymailer-m ]: https://fahmifj.medium.com/hack-the-box-sneakymailer-10-10-10-197-scratch-cde6f3d21637
 
-[ buff-b ]: https://fahmifj.github.io/writeup/htb-buff/
+[ buff-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-buff/
 [ buff-m ]: https://fahmifj.medium.com/hack-the-box-forwardslash-10-10-10-183-scratch-halfway-only-8301c0cde264/
 
-[ worker-b ]: https://https://fahmifj.github.io/writeup/htb-worker/
+[ worker-b ]: https://https://fahmifj.github.io/writeups/hackthebox/htb-worker/
 [ worker-m ]: https://fahmifj.medium.com/hack-the-box-worker-10-10-10-203-writeup-8af64e72a11d
 
-[ blackfield-b ]: https://fahmifj.github.io/writeup/htb-blackfield/
+[ blackfield-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-blackfield/
 [ blackfield-m ]: https://fahmifj.medium.com/hack-the-box-blackfield-10-10-10-192-writeup-7081e3491a56
 
-[ omni-b ]: https://fahmifj.github.io/writeup/htb-omni/
+[ omni-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-omni/
 [ omni-m ]: https://fahmifj.medium.com/hack-the-box-omni-10-10-10-204-writeup-dd00dcc85ba6
 
-[ passage-b ]: https://fahmifj.github.io/writeup/htb-passage/
+[ passage-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-passage/
 [ passage-m ]: https://fahmifj.medium.com/hack-the-box-passage-10-10-10-206-scratch-8a5e65a293a4
 
 
-[ bucket-b ]: https://fahmifj.github.io/writeup/htb-bucket/
+[ bucket-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-bucket/
 [ bucket-m ]: https://fahmifj.medium.com/hack-the-box-bucket-10-10-10-212-writeup-4b6a578e2865
 
-[ fuse-b ]: https://fahmifj.github.io/writeup/htb-fuse/
+[ fuse-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-fuse/
 [ fuse-m ]: https:///
 
-[ time-b ]: https://fahmifj.github.io/writeup/htb-time/
-[ time-m ]: https://fahmifj.github.io/writeup/htb-time/
+[ time-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-time/
+[ time-m ]: https://fahmifj.github.io/writeups/hackthebox/htb-time/
 
-[ reel2-b ]: https://fahmifj.github.io/writeup/htb-reel2/
+[ reel2-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-reel2/
 [ reel2-m ]: https://fahmifj.medium.com/hack-the-box-reel2-10-10-10-210-writeup-19d5b4d750d5
 
-[ academy-b ]: https://fahmifj.github.io/writeup/htb-academy/
+[ academy-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-academy/
 [ academy-m ]: https://fahmifj.medium.com/hack-the-box-academy-10-10-10-215-writeup-54194340d134
 
 
@@ -143,7 +150,7 @@ I publish the writeups on my personal blog and Medium.
 
 [ compromised-m ]: https://fahmifj.medium.com/hack-the-box-compromised-10-10-10-207-ee18f7625863
 
-[ doctor-b ]: https://fahmifj.github.io/writeup/htb-doctor/
+[ doctor-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-doctor/
 [ doctor-m ]: https://fahmifj.medium.com/hack-the-box-doctor-10-10-10-209-writeup-902fe05997e0
 
 [ scriptkiddie-b]: https:///
@@ -152,20 +159,39 @@ I publish the writeups on my personal blog and Medium.
 [ thenotebook-b ]: https:///
 [ thenotebook-m ]: https:///
 
-[ delivery-b ]: https://fahmifj.github.io/writeup/htb-delivery/
+[ delivery-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-delivery/
 [ delivery-m ]: https:///
 
-[ tenet-b ]: https://fahmifj.github.io/writeup/htb-tenet/
+[ tenet-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-tenet/
 [ tenet-m ]: https:///
 
-[ ready-b ]: https://fahmifj.github.io/writeup/htb-ready/
+[ ready-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-ready/
 [ ready-m ]: https:///
 
-[ laboratory-b ]: https://fahmifj.github.io/writeup/htb-laboratory/
+[ laboratory-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-laboratory/
 [ laboratory-m ]: https://fahmifj.medium.com/hack-the-box-laboratory-10-10-10-216-writeup-6f75fa2d177d
 
-[ armageddon-b ]: https://fahmifj.github.io/writeup/htb-armageddon/
+[ armageddon-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-armageddon/
 [ armageddon-m ]: https:///
 
-[ apt-b ]: https://fahmifj.github.io/writeup/htb-apt/
+[ apt-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-apt/
 [ apt-m ]: https://fahmifj.medium.com/hack-the-box-apt-10-10-10-213-writeup-b4b774de1ff9
+
+[ spectra-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-spectra/
+
+
+[ love-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-love/
+
+
+[ atom-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-atom/
+
+
+[ schooled-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-schooled/
+
+
+[ pit-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-pit/
+
+
+[ knife-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-knife/
+
+[ cap-b ]: https://fahmifj.github.io/writeups/hackthebox/htb-cap/
