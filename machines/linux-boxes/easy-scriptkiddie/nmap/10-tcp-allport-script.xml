@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Jun 13 20:44:54 2021 as: nmap -p22,5000 -sC -sV -oA nmap/10-tcp-allport-script 10.10.10.226 -->
+<nmaprun scanner="nmap" args="nmap -p22,5000 -sC -sV -oA nmap/10-tcp-allport-script 10.10.10.226" start="1623631494" startstr="Sun Jun 13 20:44:54 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="2" services="22,5000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1623631495" endtime="1623631506"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.10.226" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Werkzeug httpd" version="0.16.1" extrainfo="Python 3.8.5" method="probed" conf="10"><cpe>cpe:/a:python:python:3.8.5</cpe></service><script id="http-server-header" output="Werkzeug/0.16.1 Python/3.8.5"><elem>Werkzeug/0.16.1 Python/3.8.5</elem>
+</script><script id="http-title" output="k1d&apos;5 h4ck3r t00l5"><elem key="title">k1d&apos;5 h4ck3r t00l5</elem>
+</script></port>
+</ports>
+<times srtt="56134" rttvar="37619" to="206610"/>
+</host>
+<runstats><finished time="1623631506" timestr="Sun Jun 13 20:45:06 2021" elapsed="11.66" summary="Nmap done at Sun Jun 13 20:45:06 2021; 1 IP address (1 host up) scanned in 11.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

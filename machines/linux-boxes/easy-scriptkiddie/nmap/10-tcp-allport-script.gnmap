@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Jun 13 20:44:54 2021 as: nmap -p22,5000 -sC -sV -oA nmap/10-tcp-allport-script 10.10.10.226
+Host: 10.10.10.226 ()	Status: Up
+Host: 10.10.10.226 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 5000/open/tcp//http//Werkzeug httpd 0.16.1 (Python 3.8.5)/
+# Nmap done at Sun Jun 13 20:45:06 2021 -- 1 IP address (1 host up) scanned in 11.66 seconds

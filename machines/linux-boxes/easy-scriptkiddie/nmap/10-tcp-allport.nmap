@@ -1,0 +1,10 @@
+# Nmap 7.80 scan initiated Sun Jun 13 20:42:15 2021 as: nmap -p- --min-rate 1000 --reason -oA nmap/10-tcp-allport 10.10.10.226
+Nmap scan report for 10.10.10.226
+Host is up, received echo-reply ttl 63 (0.065s latency).
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack ttl 63
+5000/tcp open  upnp    syn-ack ttl 63
+
+# Nmap done at Sun Jun 13 20:43:01 2021 -- 1 IP address (1 host up) scanned in 45.79 seconds

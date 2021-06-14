@@ -1,0 +1,17 @@
+# Nmap 7.80 scan initiated Tue Feb  9 21:24:14 2021 as: nmap -sC -sV -oN initila-scriptkiddie -v 10.10.10.226
+Increasing send delay for 10.10.10.226 from 0 to 5 due to 237 out of 789 dropped probes since last increase.
+Increasing send delay for 10.10.10.226 from 5 to 10 due to 23 out of 76 dropped probes since last increase.
+Nmap scan report for 10.10.10.226
+Host is up (0.12s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+5000/tcp open  http    Werkzeug httpd 0.16.1 (Python 3.8.5)
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-title: k1d'5 h4ck3r t00l5
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Feb  9 21:24:42 2021 -- 1 IP address (1 host up) scanned in 28.24 seconds
