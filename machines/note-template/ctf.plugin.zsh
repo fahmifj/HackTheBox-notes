@@ -12,9 +12,12 @@ function get_ip(){
    fi
 }
 
-function mknote(){
-  mkdir nmap gobuster loot logs exploits ssh-keys dump post-exploits
-  cat << EOF > ./$1-notes.md
+function mknote() {
+	if [[ "$1" == "" ]]; then
+		echo "Usage: mknote <box-name>"
+	else
+		mkdir nmap gobuster loot logs exploits ssh-keys dump post-exploits
+		cat << EOF > ./$1-notes.md
 # 00 - Loot
 
 Credentials:
@@ -97,6 +100,7 @@ Privilege Escalation:
 > - Take a rest if you keep putting/looking your note in here for more than 45 minutes.
 
 EOF
+fi
 
 }
 # https://askubuntu.com/questions/750419/how-do-i-run-a-sudo-command-needing-password-input-in-the-background
